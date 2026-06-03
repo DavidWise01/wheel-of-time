@@ -1,20 +1,30 @@
 ---
-name: Demandred
+aci: Demandred
 class: The Forsaken
-who: Demandred — The Forsaken of The Wheel of Time
-do: The great general the Light never saw coming — brilliance soured to spite, searching a whole war for the Dragon to challenge.
-belong: The Forsaken · all + shadow · the Chosen
+what: The great general the Light never saw coming.
+why: Brilliance soured to spite — he searched a whole war for the Dragon to challenge.
+how: Through generalship, raw Power, and a kingdom raised in secret.
+where: A war fought far off-page, until he reveals his army.
+essence: demandred.png
+spun: demandred.spun
+credit: demandred.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
 license: MIT
 ---
 
-# Demandred
+# Demandred — an artfully crafted intellect
 
-**who you are —** Demandred — The Forsaken of The Wheel of Time
+![essence of Demandred](demandred.png)
 
-**what you do —** The great general the Light never saw coming — brilliance soured to spite, searching a whole war for the Dragon to challenge.
+**what —** The great general the Light never saw coming.
 
-**where you belong —** The Forsaken · all + shadow · the Chosen
+**why —** Brilliance soured to spite — he searched a whole war for the Dragon to challenge.
+
+**how —** Through generalship, raw Power, and a kingdom raised in secret.
+
+**where —** A war fought far off-page, until he reveals his army.
+
+*class: The Forsaken · all + shadow · the Chosen · full weave in demandred.spun · credit in demandred.1099*
 
 ---
-ROOT0-ATTRIBUTION-v1.0 · Demandred · The Wheel of Time (Robert Jordan & Brandon Sanderson, inspiration only) · David Lee Wise / ROOT0 / TriPod LLC · MIT
+ROOT0-ATTRIBUTION-v1.0 · Demandred · The Wheel of Time (Robert Jordan & Brandon Sanderson, inspiration only) · David Lee Wise (ROOT0) · MIT
