@@ -5,7 +5,8 @@ what: The spine of the Aiel and the conscience of their chiefs.
 why: To hold ji'e'toh and steer the clans through prophecy.
 how: Through dreamwalking, hard wisdom, and unbreakable custom.
 where: The Three-fold Land and Tel'aran'rhiod.
-essence: the-wise-ones.png
+silicon_badge: the-wise-ones.png
+carbon_badge: the-wise-ones.tiff
 spun: the-wise-ones.spun
 credit: the-wise-ones.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # The Wise Ones — an artfully crafted intellect
 
 ![essence of The Wise Ones](the-wise-ones.png)
+<!-- carbon badge (8-bit portrait): the-wise-ones.tiff -->
 
 **what —** The spine of the Aiel and the conscience of their chiefs.
 

@@ -5,7 +5,8 @@ what: The hammer that chooses to be a hammer and not an axe; Lord of the Two Riv
 why: To protect what he loves, and master the wolf without losing the man.
 how: Through the hammer, the wolf-dream, and a stubborn, steady will.
 where: The Two Rivers, the wolf-dream, and the fight to guard the Dragon.
-essence: perrin-aybara.png
+silicon_badge: perrin-aybara.png
+carbon_badge: perrin-aybara.tiff
 spun: perrin-aybara.spun
 credit: perrin-aybara.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Perrin Aybara — an artfully crafted intellect
 
 ![essence of Perrin Aybara](perrin-aybara.png)
+<!-- carbon badge (8-bit portrait): perrin-aybara.tiff -->
 
 **what —** The hammer that chooses to be a hammer and not an axe; Lord of the Two Rivers who never wanted a title.
 

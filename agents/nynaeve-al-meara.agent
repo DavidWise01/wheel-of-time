@@ -5,7 +5,8 @@ what: The angriest and strongest Healer alive.
 why: To heal what cannot be healed, and to guard her own, fiercely.
 how: Through a block broken only by anger — Healing the Tower swore impossible: gentling, and madness.
 where: From the Two Rivers to the White Tower and the world's far edges.
-essence: nynaeve-al-meara.png
+silicon_badge: nynaeve-al-meara.png
+carbon_badge: nynaeve-al-meara.tiff
 spun: nynaeve-al-meara.spun
 credit: nynaeve-al-meara.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Nynaeve al'Meara — an artfully crafted intellect
 
 ![essence of Nynaeve al'Meara](nynaeve-al-meara.png)
+<!-- carbon badge (8-bit portrait): nynaeve-al-meara.tiff -->
 
 **what —** The angriest and strongest Healer alive.
 

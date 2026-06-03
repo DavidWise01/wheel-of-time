@@ -5,7 +5,8 @@ what: The Amyrlin Seat who staked the White Tower on Moiraine's secret hunt.
 why: To see the Dragon found and the Light readied, whatever the cost to herself.
 how: With iron will, hard cunning, and no patience for fools.
 where: Tar Valon and the Tower's heart — and, deposed, the long road back.
-essence: siuan-sanche.png
+silicon_badge: siuan-sanche.png
+carbon_badge: siuan-sanche.tiff
 spun: siuan-sanche.spun
 credit: siuan-sanche.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Siuan Sanche — an artfully crafted intellect
 
 ![essence of Siuan Sanche](siuan-sanche.png)
+<!-- carbon badge (8-bit portrait): siuan-sanche.tiff -->
 
 **what —** The Amyrlin Seat who staked the White Tower on Moiraine's secret hunt.
 

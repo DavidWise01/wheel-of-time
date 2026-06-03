@@ -5,7 +5,8 @@ what: The Amyrlin Seat — all Ajahs and none; the Flame of Tar Valon.
 why: To reforge a broken Tower and lead it whole into the Last Battle.
 how: Through unbending will, dreamwalking skill, and refusing to bend even as a captive.
 where: The White Tower, reunited under her hand.
-essence: egwene-al-vere.png
+silicon_badge: egwene-al-vere.png
+carbon_badge: egwene-al-vere.tiff
 spun: egwene-al-vere.spun
 credit: egwene-al-vere.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Egwene al'Vere — an artfully crafted intellect
 
 ![essence of Egwene al'Vere](egwene-al-vere.png)
+<!-- carbon badge (8-bit portrait): egwene-al-vere.tiff -->
 
 **what —** The Amyrlin Seat — all Ajahs and none; the Flame of Tar Valon.
 

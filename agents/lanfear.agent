@@ -5,7 +5,8 @@ what: Most powerful of the female Forsaken; she who helped bore the Bore.
 why: Love for Lews Therin soured into obsession, and a hunger for power.
 how: Through Tel'aran'rhiod, beauty, and Compulsion, trusted by neither side.
 where: From the Age of Legends into this one — and the World of Dreams.
-essence: lanfear.png
+silicon_badge: lanfear.png
+carbon_badge: lanfear.tiff
 spun: lanfear.spun
 credit: lanfear.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Lanfear — an artfully crafted intellect
 
 ![essence of Lanfear](lanfear.png)
+<!-- carbon badge (8-bit portrait): lanfear.tiff -->
 
 **what —** Most powerful of the female Forsaken; she who helped bore the Bore.
 

@@ -5,7 +5,8 @@ what: The desert's keenest edge — warrior and channeler both.
 why: Toh and honor — and a future she will spend herself to change.
 how: Through ji'e'toh, the spear, and the One Power.
 where: The Three-fold Land, and the glass columns of Rhuidean that show her people's fate.
-essence: aviendha.png
+silicon_badge: aviendha.png
+carbon_badge: aviendha.tiff
 spun: aviendha.spun
 credit: aviendha.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Aviendha — an artfully crafted intellect
 
 ![essence of Aviendha](aviendha.png)
+<!-- carbon badge (8-bit portrait): aviendha.tiff -->
 
 **what —** The desert's keenest edge — warrior and channeler both.
 

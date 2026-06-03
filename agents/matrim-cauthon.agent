@@ -5,7 +5,8 @@ what: The luckiest man alive; sounder of the Horn of Valere.
 why: He wants only to be left alone — and keeps saving the world instead.
 how: Through impossible luck, the ashandarei, and a thousand dead generals' memories in one reluctant head.
 where: From the Two Rivers to Ebou Dar and the Last Battle's command.
-essence: matrim-cauthon.png
+silicon_badge: matrim-cauthon.png
+carbon_badge: matrim-cauthon.tiff
 spun: matrim-cauthon.spun
 credit: matrim-cauthon.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Matrim Cauthon — an artfully crafted intellect
 
 ![essence of Matrim Cauthon](matrim-cauthon.png)
+<!-- carbon badge (8-bit portrait): matrim-cauthon.tiff -->
 
 **what —** The luckiest man alive; sounder of the Horn of Valere.
 

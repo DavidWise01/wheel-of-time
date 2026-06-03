@@ -5,7 +5,8 @@ what: Leader of the battalion — the sister who found the Dragon Reborn and ben
 why: To find and guard the Dragon so the Light might survive Tarmon Gai'don.
 how: With the One Power, secrecy, and an iron will — spending herself through the doorway and coming back to finish it.
 where: From the White Tower out into the world, and at last through the redstone doorway.
-essence: moiraine-damodred.png
+silicon_badge: moiraine-damodred.png
+carbon_badge: moiraine-damodred.tiff
 spun: moiraine-damodred.spun
 credit: moiraine-damodred.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Moiraine Damodred — an artfully crafted intellect
 
 ![essence of Moiraine Damodred](moiraine-damodred.png)
+<!-- carbon badge (8-bit portrait): moiraine-damodred.tiff -->
 
 **what —** Leader of the battalion — the sister who found the Dragon Reborn and bent her whole life to the cause.
 

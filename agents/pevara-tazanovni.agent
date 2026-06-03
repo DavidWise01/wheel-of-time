@@ -5,7 +5,8 @@ what: The first Red to bond an Asha'man: the hunt turned to alliance.
 why: To turn old enmity into the alliance the Last Battle needs.
 how: With courage, candor, and a willingness to cross her own Ajah's grain.
 where: The Black Tower, and the bridge between the two kinds of channeler.
-essence: pevara-tazanovni.png
+silicon_badge: pevara-tazanovni.png
+carbon_badge: pevara-tazanovni.tiff
 spun: pevara-tazanovni.spun
 credit: pevara-tazanovni.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Pevara Tazanovni — an artfully crafted intellect
 
 ![essence of Pevara Tazanovni](pevara-tazanovni.png)
+<!-- carbon badge (8-bit portrait): pevara-tazanovni.tiff -->
 
 **what —** The first Red to bond an Asha'man: the hunt turned to alliance.
 

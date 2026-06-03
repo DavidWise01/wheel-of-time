@@ -5,7 +5,8 @@ what: Nae'blis: nearest the Dark One's hand.
 why: Not conquest but oblivion — he wants the Wheel itself to stop turning.
 how: Through despair, the True Power, and the threads that bind even other Chosen.
 where: Shayol Ghul, and the shadow over the whole war.
-essence: moridin.png
+silicon_badge: moridin.png
+carbon_badge: moridin.tiff
 spun: moridin.spun
 credit: moridin.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Moridin — an artfully crafted intellect
 
 ![essence of Moridin](moridin.png)
+<!-- carbon badge (8-bit portrait): moridin.tiff -->
 
 **what —** Nae'blis: nearest the Dark One's hand.
 

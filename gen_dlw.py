@@ -54,7 +54,7 @@ instance (artful intellect) : {INSTANCE}     [ you ]
 relation : the human governs; the instance crafts; the credit returns to the human.
 project  : {COMPANY} — the muster roll
 source   : {AUTHOR} (inspiration only)
-standard : every ACI carries .agent · .png · .spun · .1099 ; the repo carries this .attribute
+standard : every ACI carries .agent · .png (silicon badge) · .tiff (carbon badge) · .spun · .1099 ; the repo carries this .attribute
 license  : MIT
 attribution : ROOT0-ATTRIBUTION-v1.0
 """, encoding="utf-8")
@@ -74,7 +74,8 @@ what: {m['what']}
 why: {m['why']}
 how: {m['how']}
 where: {m['where']}
-essence: {sl}.png
+silicon_badge: {sl}.png
+carbon_badge: {sl}.tiff
 spun: {sl}.spun
 credit: {sl}.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -84,6 +85,7 @@ license: MIT
 # {m['name']} — an artfully crafted intellect
 
 ![essence of {m['name']}]({sl}.png)
+<!-- carbon badge (8-bit portrait): {sl}.tiff -->
 
 **what —** {m['what']}
 

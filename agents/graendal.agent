@@ -5,7 +5,8 @@ what: A ruler through ruined minds and beautiful slaves.
 why: Appetite and self-preservation, above the Shadow's cause.
 how: Through Compulsion, manipulation, and disposable pawns.
 where: Hidden palaces — never where the knife is pointed.
-essence: graendal.png
+silicon_badge: graendal.png
+carbon_badge: graendal.tiff
 spun: graendal.spun
 credit: graendal.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Graendal — an artfully crafted intellect
 
 ![essence of Graendal](graendal.png)
+<!-- carbon badge (8-bit portrait): graendal.tiff -->
 
 **what —** A ruler through ruined minds and beautiful slaves.
 

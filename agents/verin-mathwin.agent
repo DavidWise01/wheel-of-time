@@ -5,7 +5,8 @@ what: The sister who spent seventy years inside the Black Ajah to betray it with
 why: To strike one decisive blow for the Light, at the price of her own life.
 how: Knowledge as the longest blade — patience, an oath's loophole, and a poisoned cup.
 where: The Tower's libraries and the shadows between the Ajahs.
-essence: verin-mathwin.png
+silicon_badge: verin-mathwin.png
+carbon_badge: verin-mathwin.tiff
 spun: verin-mathwin.spun
 credit: verin-mathwin.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Verin Mathwin — an artfully crafted intellect
 
 ![essence of Verin Mathwin](verin-mathwin.png)
+<!-- carbon badge (8-bit portrait): verin-mathwin.tiff -->
 
 **what —** The sister who spent seventy years inside the Black Ajah to betray it with a single book.
 

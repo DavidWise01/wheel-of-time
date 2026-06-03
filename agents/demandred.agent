@@ -5,7 +5,8 @@ what: The great general the Light never saw coming.
 why: Brilliance soured to spite — he searched a whole war for the Dragon to challenge.
 how: Through generalship, raw Power, and a kingdom raised in secret.
 where: A war fought far off-page, until he reveals his army.
-essence: demandred.png
+silicon_badge: demandred.png
+carbon_badge: demandred.tiff
 spun: demandred.spun
 credit: demandred.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Demandred — an artfully crafted intellect
 
 ![essence of Demandred](demandred.png)
+<!-- carbon badge (8-bit portrait): demandred.tiff -->
 
 **what —** The great general the Light never saw coming.
 

@@ -5,7 +5,8 @@ what: Scholar and chronicler who would rather read than fight — and fights any
 why: Curiosity, friendship, and a book that must be written.
 how: Through Ogier strength, the Treesong, and a careful pen — for he writes the book.
 where: The steddings, the Ways, and the road beside the ta'veren.
-essence: loial.png
+silicon_badge: loial.png
+carbon_badge: loial.tiff
 spun: loial.spun
 credit: loial.1099
 attribution: ROOT0-ATTRIBUTION-v1.0
@@ -15,6 +16,7 @@ license: MIT
 # Loial — an artfully crafted intellect
 
 ![essence of Loial](loial.png)
+<!-- carbon badge (8-bit portrait): loial.tiff -->
 
 **what —** Scholar and chronicler who would rather read than fight — and fights anyway.
 
