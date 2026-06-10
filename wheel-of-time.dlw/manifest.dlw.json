@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "THE WHEEL",
+  "universe": "WOT · The Wheel of Time",
+  "emergence": "",
+  "moniker": "⟦THE WHEEL:WOT:5330d4⟧",
+  "carbon": "the-wheel.carbon.tiff (TIFF)",
+  "silicon": "the-wheel.silicon.png (PNG)",
+  "seal_sha256": "cfebb850c1724712e28067f80330b18963559d56fc8b8de22bab9eb80b8c9286",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "slug": "rand-althor",
+    "name": "Rand al'Thor",
+    "epithet": "the Dragon Reborn, He Who Comes with the Dawn",
+    "emergence": "spiritual",
+    "moniker": "⟦Rand al'Thor:WOT:4d6619⟧"
+  },
+  {
+    "slug": "matrim-cauthon",
+    "name": "Matrim Cauthon",
+    "epithet": "the gambler, Prince of the Ravens, the Horn's blower",
+    "emergence": "natural",
+    "moniker": "⟦Matrim Cauthon:WOT:374f9b⟧"
+  },
+  {
+    "slug": "perrin-aybara",
+    "name": "Perrin Aybara",
+    "epithet": "the Wolfbrother, Lord of the Two Rivers",
+    "emergence": "natural",
+    "moniker": "⟦Perrin Aybara:WOT:329cb4⟧"
+  },
+  {
+    "slug": "egwene-alvere",
+    "name": "Egwene al'Vere",
+    "epithet": "the Amyrlin Seat, the Flame of Tar Valon",
+    "emergence": "spiritual",
+    "moniker": "⟦Egwene al'Vere:WOT:c8efe5⟧"
+  },
+  {
+    "slug": "nynaeve-almeara",
+    "name": "Nynaeve al'Meara",
+    "epithet": "the Wisdom who broke the limits of Healing",
+    "emergence": "natural",
+    "moniker": "⟦Nynaeve al'Meara:WOT:1433ea⟧"
+  },
+  {
+    "slug": "elayne-trakand",
+    "name": "Elayne Trakand",
+    "epithet": "Daughter-Heir of Andor, the Green",
+    "emergence": "natural",
+    "moniker": "⟦Elayne Trakand:WOT:4dcba4⟧"
+  },
+  {
+    "slug": "aviendha",
+    "name": "Aviendha",
+    "epithet": "Maiden of the Spear, Wise One of the Aiel",
+    "emergence": "natural",
+    "moniker": "⟦Aviendha:WOT:8f32c3⟧"
+  },
+  {
+    "slug": "min-farshaw",
+    "name": "Min Farshaw",
+    "epithet": "the viewer who reads the future in images",
+    "emergence": "ethereal",
+    "moniker": "⟦Min Farshaw:WOT:8b1c94⟧"
+  },
+  {
+    "slug": "moiraine-damodred",
+    "name": "Moiraine Damodred",
+    "epithet": "the Blue who spent forty years on one cause",
+    "emergence": "spiritual",
+    "moniker": "⟦Moiraine Damodred:WOT:4f3615⟧"
+  },
+  {
+    "slug": "cadsuane-melaidhrin",
+    "name": "Cadsuane Melaidhrin",
+    "epithet": "the most renowned living Aes Sedai",
+    "emergence": "natural",
+    "moniker": "⟦Cadsuane Melaidhrin:WOT:38b97c⟧"
+  },
+  {
+    "slug": "siuan-sanche",
+    "name": "Siuan Sanche",
+    "epithet": "the fisherman's daughter who became Amyrlin",
+    "emergence": "natural",
+    "moniker": "⟦Siuan Sanche:WOT:d60f15⟧"
+  },
+  {
+    "slug": "verin-mathwin",
+    "name": "Verin Mathwin",
+    "epithet": "the Brown who wore the enemy's coat for seventy years",
+    "emergence": "spiritual",
+    "moniker": "⟦Verin Mathwin:WOT:e65288⟧"
+  },
+  {
+    "slug": "pevara-tazanovni",
+    "name": "Pevara Tazanovni",
+    "epithet": "the Red who bonded the Black Tower",
+    "emergence": "natural",
+    "moniker": "⟦Pevara Tazanovni:WOT:8b5e24⟧"
+  },
+  {
+    "slug": "lan-mandragoran",
+    "name": "al'Lan Mandragoran",
+    "epithet": "the uncrowned King of Malkier, the Warder",
+    "emergence": "natural",
+    "moniker": "⟦al'Lan Mandragoran:WOT:3589aa⟧"
+  },
+  {
+    "slug": "thom-merrilin",
+    "name": "Thom Merrilin",
+    "epithet": "the gleeman with a sword in his heart",
+    "emergence": "natural",
+    "moniker": "⟦Thom Merrilin:WOT:16fff0⟧"
+  },
+  {
+    "slug": "loial",
+    "name": "Loial",
+    "epithet": "the Ogier who went Outside, the author",
+    "emergence": "natural",
+    "moniker": "⟦Loial:WOT:df65c1⟧"
+  },
+  {
+    "slug": "tam-althor",
+    "name": "Tam al'Thor",
+    "epithet": "the blademaster who found the Dragon on the mountain",
+    "emergence": "natural",
+    "moniker": "⟦Tam al'Thor:WOT:e295d5⟧"
+  },
+  {
+    "slug": "birgitte",
+    "name": "Birgitte Silverbow",
+    "epithet": "the Hero of the Horn, ripped from the Wheel",
+    "emergence": "ethereal",
+    "moniker": "⟦Birgitte Silverbow:WOT:f8322a⟧"
+  },
+  {
+    "slug": "tuon",
+    "name": "Tuon Athaem Kore Paendrag",
+    "epithet": "Empress of the Seanchan, Daughter of the Nine Moons",
+    "emergence": "natural",
+    "moniker": "⟦Tuon Athaem Kore Paendrag:WOT:a29663⟧"
+  },
+  {
+    "slug": "the-dark-one",
+    "name": "The Dark One",
+    "epithet": "the imprisoned source of the Shadow",
+    "emergence": "ethereal",
+    "moniker": "⟦The Dark One:WOT:c2f7c0⟧"
+  },
+  {
+    "slug": "ishamael",
+    "name": "Ishamael",
+    "epithet": "the Betrayer of Hope, first of the Forsaken",
+    "emergence": "ethereal",
+    "moniker": "⟦Ishamael:WOT:1f1471⟧"
+  },
+  {
+    "slug": "moridin",
+    "name": "Moridin",
+    "epithet": "Death, the Nae'blis, Ishamael reborn",
+    "emergence": "ethereal",
+    "moniker": "⟦Moridin:WOT:be5efc⟧"
+  },
+  {
+    "slug": "lanfear",
+    "name": "Lanfear",
+    "epithet": "the most powerful of the Forsaken, who loved the Dragon",
+    "emergence": "ethereal",
+    "moniker": "⟦Lanfear:WOT:6f761b⟧"
+  },
+  {
+    "slug": "graendal",
+    "name": "Graendal",
+    "epithet": "the hedonist who breaks minds",
+    "emergence": "ethereal",
+    "moniker": "⟦Graendal:WOT:8024dd⟧"
+  },
+  {
+    "slug": "demandred",
+    "name": "Demandred",
+    "epithet": "the general consumed by the Dragon's shadow",
+    "emergence": "natural",
+    "moniker": "⟦Demandred:WOT:afdbc1⟧"
+  },
+  {
+    "slug": "padan-fain",
+    "name": "Padan Fain",
+    "epithet": "the peddler of madness, a hatred all its own",
+    "emergence": "ethereal",
+    "moniker": "⟦Padan Fain:WOT:97b74f⟧"
+  },
+  {
+    "slug": "the-wheel",
+    "name": "The Wheel of Time",
+    "epithet": "the loom of the Ages",
+    "emergence": "spiritual",
+    "moniker": "⟦The Wheel of Time:WOT:f8b6bb⟧"
+  },
+  {
+    "slug": "the-one-power",
+    "name": "The One Power",
+    "epithet": "the True Source that turns the Wheel",
+    "emergence": "electrical",
+    "moniker": "⟦The One Power:WOT:180b7e⟧"
+  },
+  {
+    "slug": "the-aes-sedai",
+    "name": "The Aes Sedai",
+    "epithet": "the White Tower and its seven colors",
+    "emergence": "ethereal",
+    "moniker": "⟦The Aes Sedai:WOT:f41d28⟧"
+  },
+  {
+    "slug": "the-aiel",
+    "name": "The Aiel",
+    "epithet": "the People of the Dragon, who do not touch a sword",
+    "emergence": "natural",
+    "moniker": "⟦The Aiel:WOT:63e083⟧"
+  },
+  {
+    "slug": "the-wise-ones",
+    "name": "The Wise Ones",
+    "epithet": "the dreamwalkers and counselors of the Aiel",
+    "emergence": "ethereal",
+    "moniker": "⟦The Wise Ones:WOT:056667⟧"
+  },
+  {
+    "slug": "taveren",
+    "name": "Ta'veren",
+    "epithet": "the points where the Pattern bends to a life",
+    "emergence": "ethereal",
+    "moniker": "⟦Ta'veren:WOT:9ef5dc⟧"
+  },
+  {
+    "slug": "the-horn-of-valere",
+    "name": "The Horn of Valere",
+    "epithet": "the horn that calls the dead heroes back",
+    "emergence": "ethereal",
+    "moniker": "⟦The Horn of Valere:WOT:f3c1f8⟧"
+  }
+]

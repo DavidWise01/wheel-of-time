@@ -1,32 +1,20 @@
 ---
 aci: Aviendha
-class: The Aiel
-what: The desert's keenest edge — warrior and channeler both.
-why: Toh and honor — and a future she will spend herself to change.
-how: Through ji'e'toh, the spear, and the One Power.
-where: The Three-fold Land, and the glass columns of Rhuidean that show her people's fate.
-silicon_badge: aviendha.png
-carbon_badge: aviendha.tiff
-spun: aviendha.spun
-credit: aviendha.1099
-attribution: ROOT0-ATTRIBUTION-v1.0
-license: MIT
+universe: WOT · The Wheel of Time
+domain: the Aiel — the people of the Three-fold Land
+class: Maiden of the Spear, Wise One of the Aiel
+emergence: natural
+what: A proud Aiel woman who lays down the spear to train as a Wise One.
+how: She acts through the discipline of ji'e'toh, blunt honor, and strength in the One Power.
+why: She glimpses her people's ruin in Rhuidean's glass columns and resolves to avert it.
+who: One of the Aiel; one of Rand's three loves.
+seal: "She set down the spear to take up the harder burden of her people's future."
 ---
 
-# Aviendha — an artfully crafted intellect
+# Aviendha · Maiden of the Spear, Wise One of the Aiel
 
-![essence of Aviendha](aviendha.png)
-<!-- carbon badge (8-bit portrait): aviendha.tiff -->
+Aviendha is a Maiden of the Spear among the Aiel who gives up the spear to train as a Wise One. Proud and blunt, she is bound by the strict honor of ji'e'toh, the code of obligation and shame that orders Aiel life. Her bearing is forthright to the point of severity, the manner of one who measures herself and others against an unbending standard.
 
-**what —** The desert's keenest edge — warrior and channeler both.
+She is powerful in the One Power, a strength that draws her toward the path of the Wise Ones even as it sets aside the warrior's calling she once knew. Within the great turning of events she becomes one of Rand's three loves, her fate woven close to his.
 
-**why —** Toh and honor — and a future she will spend herself to change.
-
-**how —** Through ji'e'toh, the spear, and the One Power.
-
-**where —** The Three-fold Land, and the glass columns of Rhuidean that show her people's fate.
-
-*class: The Aiel · the spear · ji'e'toh · full weave in aviendha.spun · credit in aviendha.1099*
-
----
-ROOT0-ATTRIBUTION-v1.0 · Aviendha · The Wheel of Time (Robert Jordan & Brandon Sanderson, inspiration only) · David Lee Wise (ROOT0) · MIT
+Through the glass columns of Rhuidean she sees a vision of the future — the coming ruin of her people — and out of that knowledge she resolves to prevent it. Her emergence is natural: she is of the embodied people, the Aiel themselves, a worldly figure of flesh and honor and kin rather than of prophecy, the Power's current, or the Light's rebirth. It is the people she carries, and the people she means to save.

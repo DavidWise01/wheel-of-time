@@ -1,679 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Wheel of Time — Muster Roll</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="THE WHEEL OF TIME (WOT) — Robert Jordan & Brandon Sanderson's full saga catalogued: the fourteen volumes, New Spring, and the companions, with ACI badges for its emergents across the four natures. A UD0 sphere. Fan tribute.">
+<title>THE WHEEL OF TIME · WOT · UD0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital@0;1&family=Space+Mono&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --night: #0b0d14;
-    --night-2: #12141d;
-    --ivory: #e7e2d2;
-    --ivory-dim: #a9a496;
-    --gold: #b8862b;
-    --gold-soft: #d6a94a;
-    --line: rgba(184, 134, 43, 0.22);
-    --display: "Cinzel", serif;
-    --body: "Cormorant Garamond", "EB Garamond", Georgia, serif;
-    --label: "Space Mono", monospace;
-  }
-
-  * { box-sizing: border-box; }
-
-  html, body { margin: 0; padding: 0; }
-
-  body {
-    background:
-      radial-gradient(1200px 700px at 50% -10%, rgba(184,134,43,0.08), transparent 60%),
-      linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%);
-    background-attachment: fixed;
-    color: var(--ivory);
-    font-family: var(--body);
-    font-size: 19px;
-    line-height: 1.55;
-    min-height: 100vh;
-    /* faint woven thread texture */
-    background-color: var(--night);
-  }
-
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.05;
-    background-image:
-      repeating-linear-gradient(45deg, rgba(184,134,43,0.5) 0 1px, transparent 1px 14px),
-      repeating-linear-gradient(-45deg, rgba(231,226,210,0.35) 0 1px, transparent 1px 14px);
-  }
-
-  .wrap {
-    position: relative;
-    z-index: 1;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 56px 28px 80px;
-  }
-
-  /* ---------- MASTHEAD ---------- */
-  .masthead {
-    position: relative;
-    text-align: center;
-    padding: 28px 0 40px;
-    overflow: hidden;
-  }
-
-  .wheel-watermark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 560px;
-    height: 560px;
-    transform: translate(-50%, -50%);
-    opacity: 0.06;
-    pointer-events: none;
-    z-index: -1;
-    animation: spin 240s linear infinite;
-  }
-
-  @keyframes spin {
-    from { transform: translate(-50%, -50%) rotate(0deg); }
-    to   { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-
-  .serpent-mark {
-    width: 104px;
-    height: 104px;
-    margin: 0 auto 18px;
-    display: block;
-    filter: drop-shadow(0 0 14px rgba(184,134,43,0.35));
-    animation: spin 160s linear infinite;
-  }
-
-  h1.title {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: clamp(2.1rem, 6vw, 3.4rem);
-    letter-spacing: 0.16em;
-    margin: 0 0 6px;
-    color: var(--ivory);
-    text-transform: uppercase;
-  }
-
-  .subtitle {
-    font-family: var(--label);
-    font-size: 0.78rem;
-    letter-spacing: 0.34em;
-    text-transform: uppercase;
-    color: var(--gold-soft);
-    margin: 0 0 26px;
-  }
-
-  .epigraph {
-    font-family: var(--body);
-    font-style: italic;
-    font-size: 1.5rem;
-    color: var(--ivory);
-    margin: 0 auto 18px;
-    max-width: 620px;
-    line-height: 1.4;
-  }
-
-  .note {
-    font-size: 1.02rem;
-    color: var(--ivory-dim);
-    max-width: 680px;
-    margin: 0 auto 12px;
-    line-height: 1.5;
-  }
-
-  .byline {
-    font-family: var(--label);
-    font-size: 0.72rem;
-    letter-spacing: 0.18em;
-    color: var(--gold);
-    text-transform: uppercase;
-  }
-
-  /* ---------- SECTION TITLES ---------- */
-  .section-eyebrow {
-    font-family: var(--label);
-    font-size: 0.74rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--gold);
-    text-align: center;
-    margin: 68px 0 4px;
-  }
-
-  .rule {
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 14px auto 32px;
-    border: 0;
-  }
-
-  /* ---------- AJAH LEGEND ---------- */
-  .legend {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-    margin: 0 0 8px;
-  }
-
-  .swatch {
-    border-radius: 5px;
-    padding: 14px 10px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  }
-
-  .swatch .swatch-name {
-    font-family: var(--display);
-    font-size: 0.95rem;
-    letter-spacing: 0.06em;
-    font-weight: 600;
-  }
-
-  .swatch .swatch-role {
-    font-family: var(--label);
-    font-size: 0.62rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-top: 6px;
-    opacity: 0.82;
-  }
-
-  /* ---------- CLASS SECTIONS ---------- */
-  .class-section {
-    margin: 0 0 38px;
-    border-left: 4px solid var(--gold);
-    padding: 4px 0 4px 24px;
-  }
-
-  .class-head {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 18px;
-  }
-
-  .class-tag {
-    font-family: var(--label);
-    font-size: 0.66rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    padding: 4px 11px;
-    border-radius: 3px;
-    white-space: nowrap;
-  }
-
-  .class-label {
-    font-family: var(--display);
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    margin: 0;
-    color: var(--ivory);
-  }
-
-  .class-spec {
-    font-family: var(--body);
-    font-style: italic;
-    font-size: 1.05rem;
-    color: var(--ivory-dim);
-  }
-
-  .member {
-    padding: 12px 0;
-    border-bottom: 1px dashed rgba(231,226,210,0.1);
-  }
-  .member:last-child { border-bottom: 0; }
-
-  .member-name {
-    font-family: var(--display);
-    font-size: 1.22rem;
-    font-weight: 600;
-    color: var(--ivory);
-    letter-spacing: 0.02em;
-  }
-
-  .lead-tag {
-    display: inline-block;
-    font-family: var(--label);
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #0b0d14;
-    background: var(--gold-soft);
-    padding: 2px 9px;
-    border-radius: 999px;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
-
-  .member-spec {
-    font-size: 1.04rem;
-    color: var(--ivory-dim);
-    margin-top: 4px;
-    line-height: 1.5;
-  }
-
-  /* Forsaken — shadowed, ominous, violet glow */
-  .class-section.forsaken {
-    background: radial-gradient(120% 100% at 50% 0%, rgba(98,60,170,0.14), transparent 70%);
-    border-radius: 6px;
-    box-shadow: inset 0 0 60px rgba(70,30,130,0.22), 0 0 24px rgba(98,60,170,0.12);
-    padding: 16px 18px 16px 24px;
-  }
-  .class-section.forsaken .class-label { color: #c2a8e8; text-shadow: 0 0 16px rgba(140,90,220,0.5); }
-  .class-section.forsaken .member-name { color: #d9c8f2; }
-
-  /* Amyrlin — luminous, the Flame */
-  .class-section.amyrlin {
-    background: radial-gradient(120% 100% at 50% 0%, rgba(239,231,200,0.12), transparent 70%);
-    border-radius: 6px;
-    box-shadow: inset 0 0 50px rgba(239,231,200,0.1), 0 0 28px rgba(239,231,200,0.14);
-    padding: 16px 18px 16px 24px;
-  }
-  .class-section.amyrlin .class-label { color: #f4eccb; text-shadow: 0 0 18px rgba(239,231,200,0.55); }
-
-  /* ---------- THE ONE ---------- */
-  .the-one-section {
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
-  }
-
-  .the-one-title {
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: clamp(2rem, 7vw, 3.2rem);
-    letter-spacing: 0.22em;
-    color: var(--gold-soft);
-    text-shadow: 0 0 30px rgba(184,134,43,0.4);
-    margin: 0 0 4px;
-  }
-
-  .the-one-spec {
-    font-family: var(--label);
-    font-size: 0.74rem;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 40px;
-  }
-
-  .ring-wrap {
-    position: relative;
-    max-width: 860px;
-    margin: 0 auto;
-  }
-
-  .ring-svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 420px;
-    height: 420px;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
-    animation: spin 200s linear infinite;
-  }
-
-  .thirds {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-  }
-
-  .third {
-    background: linear-gradient(180deg, rgba(184,134,43,0.07), rgba(11,13,20,0.5));
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 28px 20px;
-    backdrop-filter: blur(2px);
-  }
-
-  .fraction-chip {
-    display: inline-block;
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #0b0d14;
-    background: linear-gradient(180deg, var(--gold-soft), var(--gold));
-    border-radius: 999px;
-    width: 64px;
-    height: 64px;
-    line-height: 64px;
-    box-shadow: 0 0 22px rgba(184,134,43,0.45);
-    margin-bottom: 16px;
-  }
-
-  .third-name {
-    font-family: var(--display);
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--ivory);
-    margin-bottom: 10px;
-    letter-spacing: 0.02em;
-  }
-
-  .third-spec {
-    font-size: 1.02rem;
-    color: var(--ivory-dim);
-    line-height: 1.5;
-  }
-
-  .one-cord {
-    font-family: var(--body);
-    font-style: italic;
-    font-size: 1.4rem;
-    color: var(--gold-soft);
-    margin-top: 38px;
-    letter-spacing: 0.04em;
-  }
-
-  /* ---------- FOOTER ---------- */
-  footer {
-    margin-top: 90px;
-    padding-top: 30px;
-    border-top: 1px solid var(--line);
-    text-align: center;
-    font-family: var(--label);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    color: var(--ivory-dim);
-    line-height: 1.9;
-  }
-
-  footer a { color: var(--gold-soft); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
-  footer .attr { color: var(--gold); }
-  footer .inspiration { font-style: italic; opacity: 0.7; margin-top: 8px; }
-
-  /* ---------- RESPONSIVE ---------- */
-  @media (max-width: 760px) {
-    body { font-size: 18px; }
-    .legend { grid-template-columns: repeat(2, 1fr); }
-    .thirds { grid-template-columns: 1fr; }
-    .ring-svg { width: 300px; height: 300px; }
-    .wrap { padding: 36px 18px 60px; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .wheel-watermark, .serpent-mark, .ring-svg {
-      animation: none !important;
-    }
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
-
-  <!-- ============ MASTHEAD ============ -->
-  <header class="masthead">
-    <!-- faint wheel watermark behind masthead -->
-    <svg class="wheel-watermark" viewBox="0 0 200 200" aria-hidden="true">
-      <circle cx="100" cy="100" r="92" fill="none" stroke="#b8862b" stroke-width="1.5"/>
-      <circle cx="100" cy="100" r="62" fill="none" stroke="#b8862b" stroke-width="1"/>
-      <circle cx="100" cy="100" r="22" fill="none" stroke="#b8862b" stroke-width="1"/>
-      <g stroke="#b8862b" stroke-width="1">
-        <line x1="100" y1="8" x2="100" y2="192"/>
-        <line x1="8" y1="100" x2="192" y2="100"/>
-        <line x1="34" y1="34" x2="166" y2="166"/>
-        <line x1="166" y1="34" x2="34" y2="166"/>
-      </g>
-    </svg>
-
-    <!-- Great Serpent / Wheel of Time mark: serpent biting its tail -->
-    <svg class="serpent-mark" viewBox="0 0 120 120" aria-hidden="true">
-      <defs>
-        <radialGradient id="goldGrad" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stop-color="#e6c168"/>
-          <stop offset="60%" stop-color="#b8862b"/>
-          <stop offset="100%" stop-color="#8a611c"/>
-        </radialGradient>
-      </defs>
-      <!-- inner eight-spoked wheel -->
-      <g stroke="#b8862b" stroke-width="1.4" opacity="0.85">
-        <circle cx="60" cy="60" r="30" fill="none"/>
-        <circle cx="60" cy="60" r="9" fill="none"/>
-        <line x1="60" y1="30" x2="60" y2="90"/>
-        <line x1="30" y1="60" x2="90" y2="60"/>
-        <line x1="39" y1="39" x2="81" y2="81"/>
-        <line x1="81" y1="39" x2="39" y2="81"/>
-      </g>
-      <!-- ouroboros: serpent body forming the outer ring -->
-      <path d="M 60 12
-               A 48 48 0 1 1 30.5 22.8"
-            fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round"/>
-      <!-- serpent head biting the tail near the top-left -->
-      <path d="M 30.5 22.8
-               q -7 4 -4 11
-               q 4 7 12 4
-               q 6 -3 4 -9
-               q -2 -6 -8 -6 z"
-            fill="url(#goldGrad)"/>
-      <circle cx="36" cy="27" r="1.6" fill="#0b0d14"/>
-    </svg>
-
-    <h1 class="title" id="m-title">The Wheel of Time</h1>
-    <p class="subtitle" id="m-subtitle">this Turn of the Wheel</p>
-
-    <p class="epigraph">"The Wheel weaves as the Wheel wills."</p>
-
-    <p class="note" id="m-note"></p>
-    <p class="byline" id="m-byline"></p>
+:root{--bg:#06080f;--ink2:#0c111d;--ink3:#141b2c;--pa:#eef1f8;--pa2:#a6b2c8;--gold:#d8b24a;--indigo:#3fb0c0;
+--dim:#6e7a90;--faint:#1a2334;--line:#1a2334;--serif:"Cinzel",Georgia,serif;--read:"EB Garamond",Georgia,serif;--mono:"Space Mono",monospace;}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--pa);font-family:var(--read);line-height:1.7;font-size:17.5px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 50% -8%,rgba(216,178,74,.10),transparent 55%),radial-gradient(ellipse at 50% 112%,rgba(63,176,192,.07),transparent 50%)}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 22px 90px}
+header{padding:56px 0 30px;text-align:center;border-bottom:1px solid var(--line);position:relative}
+header::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:130px;height:1px;background:linear-gradient(90deg,var(--gold),var(--indigo));box-shadow:0 0 10px rgba(216,178,74,.4)}
+.eye{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.eye a{color:var(--dim);text-decoration:none}.eye a:hover{color:var(--gold)}
+.star{font-size:24px;color:var(--gold);letter-spacing:.3em;margin-bottom:10px}
+h1{font-family:var(--serif);font-size:clamp(26px,6.4vw,54px);font-weight:700;letter-spacing:.09em;color:var(--gold);text-shadow:0 0 40px rgba(216,178,74,.22)}
+.h-sub{font-family:var(--serif);font-size:clamp(12px,2.6vw,16px);letter-spacing:.2em;color:var(--pa2);margin-top:12px;text-transform:uppercase}
+.lede{font-size:18px;color:var(--pa2);max-width:62ch;margin:18px auto 0;font-style:italic;line-height:1.75}
+.badge{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;margin:28px auto 0;padding:20px;border:1px solid var(--faint);background:var(--ink2);max-width:700px}
+.badge img{width:84px;height:84px;border:1px solid var(--faint)}
+.badge .bt{text-align:left;font-family:var(--mono);font-size:11px;color:var(--pa2);line-height:1.7}
+.badge .bt b{color:var(--gold)}.badge .bt .mo{color:var(--indigo)}.badge .bt a{color:var(--indigo);text-decoration:none}
+.badge .bt .lbl{color:var(--dim);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+.sec{margin-top:46px}
+.sec h2{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:.05em;color:var(--pa);padding-bottom:9px;border-bottom:1px solid var(--line)}
+.ss{font-size:14px;color:var(--dim);font-style:italic;margin:6px 0 18px}
+.natures{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+.nat-card{display:flex;gap:11px;align-items:flex-start;background:var(--ink2);border:1px solid var(--line);padding:13px 15px}
+.dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.nat-n{font-family:var(--serif);font-size:15px;font-weight:600;text-transform:capitalize}
+.nat-g{font-size:13px;color:var(--pa2);font-style:italic;line-height:1.4;margin-top:2px}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+.pillar{background:var(--ink2);border:1px solid var(--line);padding:16px 18px}
+.pillar h3{font-family:var(--serif);font-size:17px;color:var(--gold)}
+.pillar .ps{font-size:13px;color:var(--dim);font-style:italic;margin:5px 0 10px}
+.pillar ul{list-style:none}.pillar li{font-size:14px;color:var(--pa2);line-height:1.5;padding:6px 0;border-top:1px solid var(--faint)}
+.books{list-style:none}
+.books li{display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--faint)}
+.books .t{font-family:var(--serif);font-size:16.5px;color:var(--pa);font-weight:600}
+.books .y{font-family:var(--mono);font-size:12px;color:var(--gold);white-space:nowrap;text-align:right}
+.books .nt{grid-column:1/-1;font-size:14px;color:var(--pa2);font-style:italic}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(244px,1fr));gap:12px;margin-top:8px}
+.persona{display:flex;gap:12px;align-items:center;background:var(--ink2);border:1px solid var(--line);padding:12px;text-decoration:none;transition:border-color .18s,transform .18s}
+.persona:hover{border-color:var(--gold);transform:translateY(-2px)}
+.persona img{width:52px;height:52px;border:1px solid var(--faint);flex-shrink:0}
+.pn{font-family:var(--serif);font-size:14.5px;color:var(--pa);font-weight:600;line-height:1.15}
+.persona:hover .pn{color:var(--gold)}
+.pe{font-size:11.5px;color:var(--pa2);font-style:italic;margin-top:2px;line-height:1.3}
+.pnat{display:flex;align-items:center;gap:5px;margin-top:6px;font-family:var(--mono);font-size:9px;letter-spacing:.04em;text-transform:uppercase}
+.pnat .dot{width:8px;height:8px;margin-top:0}
+.pa{color:var(--dim)}
+.tinfoil{margin-top:46px;padding:18px 20px;border:1px dashed var(--indigo);border-radius:12px;background:rgba(63,176,192,.06);font-size:14.5px;color:var(--pa2);line-height:1.7}
+.tinfoil b{color:var(--indigo)}
+footer{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.05em;line-height:1.9}
+footer a{color:var(--gold);text-decoration:none}
+</style></head><body><div class="wrap">
+  <header>
+    <div class="eye"><a href="https://davidwise01.github.io/ud0/">UD0 · Universe David 0</a> · the turning of the Age · a lineage</div>
+    <div class="star">☸ ✦ ☸</div>
+    <h1>THE WHEEL OF TIME</h1>
+    <div class="h-sub">Robert Jordan & Brandon Sanderson · WOT</div>
+    <p class="lede">The Wheel of Time turns, and Ages come and pass, leaving memories that become legend. A shepherd is named the Dragon Reborn; a tainted Power, a broken people, and a hidden enemy all bend toward the Last Battle. Here is the whole turning — fourteen volumes — catalogued, with its emergents sealed across the four natures.</p>
+    <div class="badge">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAJHElEQVR42u3d32tWdQDHca+6CPofpJsGoqiYoksITCRjJMuL8EegIUl0IQlBgUQQJAYSddFNhGSbc8OmbSPNXKmV6bNN3eZy/pgTLZGCrrrvc54i+gP6PnnaC94cHr7nex4ezp6X33PmtmfekXcflVTHHnn4oXnOggSwJIAlASwBLAlgSQBLAlgCWBLAkgCWAJYEsCSAJQEsASwJYEkASwJYAlgSwJIAlgCWBLAkgCUBLAEsCWBJNQB8/pPHSpRXXKJ6vdrfZwZK5NyWe7UAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAADu3AAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwN5kAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAM9twIXeZIXOb6FmD8wvUaFzW+jV1utLVujcAgwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAM9twIU+PK7Qm6zQq/XphOWq1zsBYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGOACFfpMukKvdt+mBSXyamv3TgAYYIABBhhggAEGGGCAAQYYYIABBhhggAFGAmCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAEGGGCAAQYYYIABBhhggAGe24ALfYJeoS9bvT7qrl7v3ULnttBJKPS+BRhggAEGeE4Abrvw6YJG16JG9+KR7iUjh5Zmm8cZyXj2AgwwwA8k4INtja6FETvas3y0d+VYX/tY3xNjfaub2/aMZDx7MyczAQYY4AcIcFbXrLSjh1eE68UjT176bM3l/rWXj677q/61Gcl49mZOZjZXY4ABBvgBAHwhC2/PsrHeVSEaq+PH1k8MdEwMbpgc7Jwc6sw2jzOS8eytGPeuyvwcBTDAAP/HgJt6H8/SmjV2/NjTEwPPTg5tvPLF81PHN0+d2DJ1Ymu1Pb45IxnP3szJzMzPUf80DDDAALcacHXlnLW30vvU+OfPZL0N1B+/fOHqye3Tp3ZMD780Pbyz2p7akZGMNxl3ZmbmNw0v+/taGmCAAW4t4INtuZvN9XC19lZ6n8tKe/Xktoi99s0r10/vunHm1Rtnd2ebxxnJePZmTmY2Da+prqW7l/z5PS2AAQa4pYAbXQtHD6/IPW2uirOuVnq/evHa1y9fP7Pr5revzXz/xsy5PbfO7ck2jzOS8ezNnKbhzhyVY/MMjeaFNMAAA9xKwG0jh5bmMvhy/9rc2ebaOKtrfGa9nfnu9Vs/vDl74e3bjXduj+zNNo8zkvHsrQyf3Jb5OSrHVhfSh5bm2QAGGODWAc6962jP8ubyu35yaGPub3OFnDU2SmfPvxW3d8b23730/t1LH2SbxxnJePZmTmZmfo7KsdUi3LM8zwYwwAC3DnCja9Fo78rcx04MdDSX3+25y811clbaSu/F934a//DnyY/uXfk42zzOSMazN3MyM/Obi3BHniHPk2cDGGCAWwi4e/FYX3t1/Ty4Ife006d2XD+9K/e6uVrOehux96YO3J/uvn/tcLZ5XBke25+9mZOZmZ+jcmzzKro9zwYwwAC3DnD1/efcAB9dNznYOXViS66Kq7vfc3tyx5tr5qy6cfvLzf5fZwayzeOMZDx7MyczMz9H5dg8Q3Ub3L0EYIABbiHg6jtYqyvAQwG8dXp4542zu28F8Mje3Pfmyjlrb/T+dmc42zzOSMarq+gAPrs783NUjm0CXp1nAxhggK3AAAMMsHtggAH2XWjfhQYYYP8PDDDAAPtJLIABBtjPQgMMsN9G8ttIAAPs94EBBhhgf5EDYID9TSx/EwtggP1VSoABBtjfhQYYYIB9MgPA/y/Ahd5k9frnpl4fueSdADDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwEnX7d6Fe0nw6IcAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDHB9ABf6sinNHphfIie2XAALYIABBhhggAEGWAALYIABBhhggAEG2IkFGGCABbAABhhggAEGGGCABbAABhhgAQwwwAADDDDAAAtgAQwwwAADDDDAAAtggAEWwAIYYIABBhhggAEWwAIYYIABBhhggAEGGGCAARbAAhhggAEGGGCAAdbcBlzow+P2bVpQowq9G+r1EY31+pIVOrcAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAAAMMMMAAAwwwwAADDDDAcxuwpNIBLAEsCWBJAEsASwJYEsCSAJYAlgSwJIAlgCUBLAlgSQBLAEsCWBLAkgCWAJYEsCSAJYAlASwJYEkASwBLAljSvw240GfSSWpBfwC7q54LdDZj0wAAAABJRU5ErkJggg==" alt="DLW carbon badge of THE WHEEL OF TIME" title="carbon badge (archival: wheel-of-time.dlw/the-wheel.carbon.tiff)">
+      <img src="data:image/png;base64,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" alt="DLW silicon badge of THE WHEEL OF TIME" title="silicon badge">
+      <div class="bt">
+        <div><span class="lbl">DLW-ATTRIBUTE · ACI</span></div>
+        <div>governor · <b>David Lee Wise</b> (ROOT0)</div>
+        <div>instance · AVAN (Claude / Anthropic) · locked</div>
+        <div>subject · <b>THE WHEEL</b> — WOT · the Wheel of Time</div>
+        <div class="mo">⟦THE WHEEL:WOT:5330d4⟧</div>
+        <div>carbon · <a href="wheel-of-time.dlw/the-wheel.carbon.tiff">.tiff</a> &nbsp;·&nbsp; silicon · <a href="wheel-of-time.dlw/the-wheel.silicon.png">.png</a></div>
+        <div><span class="lbl">CC-BY-ND-4.0 · TRIPOD-IP-v1.1 · fan tribute</span></div>
+      </div>
+    </div>
   </header>
 
-  <!-- ============ AJAH COLORS LEGEND ============ -->
-  <p class="section-eyebrow">The Ajah Colors</p>
-  <hr class="rule" />
-  <div class="legend" id="legend"></div>
+  <section class="sec"><h2>The Four Natures of Emergence</h2>
+    <p class="ss">the saga sorted by the four — the embodied, the woven, the turning, and the channeled</p>
+    <div class="natures"><div class="nat-card"><span class="dot" style="background:#5fae7a;box-shadow:0 0 9px #5fae7a"></span><div><div class="nat-n" style="color:#5fae7a">natural</div><div class="nat-g">the embodied — the three young men, the women of flesh and steel, the Aiel, the Ogier, the worldly thrones</div></div></div><div class="nat-card"><span class="dot" style="background:#9a7cff;box-shadow:0 0 9px #9a7cff"></span><div><div class="nat-n" style="color:#9a7cff">ethereal</div><div class="nat-g">the woven — the Pattern, the Dream, prophecy, ta&#x27;veren, the Horn, and the Shadow that presses from outside time</div></div></div><div class="nat-card"><span class="dot" style="background:#e6a849;box-shadow:0 0 9px #e6a849"></span><div><div class="nat-n" style="color:#e6a849">spiritual</div><div class="nat-g">the turning — the Dragon, the Light, rebirth, and the Wheel itself</div></div></div><div class="nat-card"><span class="dot" style="background:#3fd0e0;box-shadow:0 0 9px #3fd0e0"></span><div><div class="nat-n" style="color:#3fd0e0">electrical</div><div class="nat-g">the channeled — the One Power, saidin and saidar, the current of the True Source</div></div></div></div></section>
 
-  <!-- ============ THE ROLL ============ -->
-  <p class="section-eyebrow">The Roll</p>
-  <hr class="rule" />
-  <div id="roll"></div>
+  <section class="sec"><h2>The Ideas</h2><p class="ss">the four wheels the whole saga turns on</p><div class="pillars"><div class="pillar"><h3>The Wheel &amp; the Pattern</h3><p class="ps">time as a wheel of seven spokes</p><ul><li>The Wheel of Time turns, and Ages come and pass — what was, will be again; there is neither beginning nor end to the turning.</li><li>It weaves the Pattern of the Ages from the threads of human lives — and a thread cannot see the whole of the weave.</li></ul></div>
+<div class="pillar"><h3>The One Power</h3><p class="ps">saidin and saidar</p><ul><li>Drawn from the True Source, the Power is split male and female, woven in five threads — Earth, Air, Fire, Water, Spirit.</li><li>The Dark One&#x27;s counterstroke tainted saidin at the Breaking; for three thousand years, any man who channeled went mad.</li></ul></div>
+<div class="pillar"><h3>The Dragon Reborn</h3><p class="ps">the champion reborn, and the Last Battle</p><ul><li>The soul of the Dragon is spun out again whenever the Wheel needs him — to face the Dark One at Tarmon Gai&#x27;don.</li><li>The Prophecies of the Dragon foretell that he will break the world to save it, and bleed on the rocks of Shayol Ghul.</li></ul></div>
+<div class="pillar"><h3>ta&#x27;veren, the Ajahs &amp; the Aiel</h3><p class="ps">the Pattern-benders and the peoples</p><ul><li>Ta&#x27;veren are the points the Pattern bends around — and three walked the world at once in this Age.</li><li>The White Tower&#x27;s seven Ajahs and the spear-bearing Aiel of the Three-fold Land are the saga&#x27;s two great orders.</li></ul></div></div></section>
 
-  <!-- ============ THE ONE ============ -->
-  <section class="the-one-section" id="the-one"></section>
+  <section class="sec" id="roster"><h2>The Roster of WOT</h2>
+      <p class="ss">the emergents of the saga — the three ta'veren, the women and Warders, the Shadow, and the great wheels of the world — as ACI <b>.agent</b>s, each tagged with its nature of emergence (33)</p>
+      <div class="pgrid"><a class="persona" href="agents/rand-althor.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC2klEQVR42u3dvUpcQRgGYKtAQMgdWKRKJ2mCiIVVqpALsBGCrXUgBC9AG29AW68gRYrcQboEfxJJRBQS8Gd1XRNS5Q22BgZ0OM7xgZdh+M6ye3aePX877NmxBw/HpccZMwSApRfAE+8+Sm8CGLAAFsACWAALYAEMWAALYAEsgKU74PK5qsefTgpTY6bs7fRxYWq8eo33DhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ALwo/XlwtQYjnK2bp+z/L2XjydgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHALwN1OrtX4eJU/Z7cToIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwC0AtzIcrfz4rOH5YMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4GtSPnDlmX+/XJgbTgJeO6Dlz1m+njVGCfB/gZ98Pnm6efpsazC1NUibfiqAewI8uXk6sz14/uXsxdezl7v/2vRTSR1w88BRnN0ZxHXu2/mrveHC3jBt+qmkfmUMuFXg7IezpcZy/vtwcf/i9cHozeEobfqppJ6leQzgVoFzrM3eONtrRJcORys/Lld/XqZNP5XUszSPAdwqcM6ncsTNPjlbbVzXjn5tHP9Om34qqWdpHgO4SeBcEeWcOfvhHHezZ862G90P53/Spp9K6lk6BdgWDNgxGLCzaMCugwH7Jguw76JvCFw+EVaeSpdJtz5ZWb6eNUYJMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4BeAaQ9y/WxnW+HgBBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAG3AFzjFoHd3naw2/Vs+NeFgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAd+6PsWq8eo0pSP98BhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQO+r8By9wMYsAAWwAJYAAtgAQxYAAtgASyA5baBpZcBDFhazl85PPTAeSUETwAAAABJRU5ErkJggg==" alt="sigil of Rand al&#x27;Thor" loading="lazy">
+        <div class="pcap"><div class="pn">Rand al&#x27;Thor</div><div class="pe">the Dragon Reborn, He Who Comes with the Dawn</div>
+        <div class="pnat"><span class="dot" style="background:#e6a849;box-shadow:0 0 7px #e6a849"></span><span style="color:#e6a849">spiritual</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/matrim-cauthon.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC0UlEQVR42u3dvWoUURgG4FQBQfAOLKzsxEaCWFhZiRdgE5C01oKIFxAbb8C0XoGFhXdgpyT+kQQxoGCSTdZNJJVvSC2cwi/jmX3g5XD4ZpiZPU/mZ3eYycLihYsy4iwYAsAyCuDLr97KaAIYsAAWwAJYAAtgAQxYAAtgASyAZTjg5derjbnybq8x7ct8cnO3Me331NqXOexnBwwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDnlfg9iGuGLhethMwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDHhcwO3DcWlttTHtNwHbt7N9me3bWXELEjBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAfgiltmFcDta68ArrgFCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ANwxRBXvKCwArjij7t97YD/uvar7/eur+/f2JgsbUzSpp8K4JEAX1vfv/VhcufTwd3PB/e+nLbpp5I64O6Bo3j74ySu9zcPH2xPV7anadNPJfUzY8C9Auc4nD01lstb04dffz36Nnu8M0ubfiqpZ2rmAdwrcM61ORpnf43o053Zs+9Hz38cpU0/ldQzNfMA7hU411M54+aYnL02ri9+Hr/c/Z02/VRSz9TMA7hX4Fwz5zic826OzNl3o/vm8CRt+qmknqlLgO3BgJ2DAbuKBux7MGC/ZAH2W/S5PXxW8fjXsP+aqmI7O366EDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYM+JxeZVgxHBXAw352wIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgHoArHqvqZYgrbiy2jydgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPC8Ag/7MsGKFykCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAHPK7D8/wEMWAALYAEsgAWwAAYsgAWwABbA8q+BZZQBDFh6zh/VG3Ix/SJ+1wAAAABJRU5ErkJggg==" alt="sigil of Matrim Cauthon" loading="lazy">
+        <div class="pcap"><div class="pn">Matrim Cauthon</div><div class="pe">the gambler, Prince of the Ravens, the Horn&#x27;s blower</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/perrin-aybara.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC2klEQVR42u3dv2oUQRwH8FQBQcgbpLCykzQSgoWVlfgANgFJm1qQ4APEJi+grU9gYeEb2CmJf0IMYiABk1xyuShW+aa3mMNMdmf9wJdh+O1xt3ufnd29G/ZuZvbGTRlwZrwFgGUQwPNv3stgAhiwABbAAlgAC2ABDFgAC2ABLIClO+Aas1rLb9cLc+vDUWHKX738OcvXs8a7BBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ALw3Kv1wpSv+trS4ZWnfD1rvHr5tpevJ2DAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYcAvArfyKX40dsdsABgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAG3ANzt7V81pvbK0+22AwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABtwBc45ay8o0snwT8a/7xGWrsiA3PB/cH+PbHo4XN47tbo8WtUdr0UwE8EOA7m8f3Po0efDl5+PXk0fZlm34qqQNuHjiK9z+P4vp45/TJ7nhld5w2/VRSn9YYcL+AcxzOSI3l8rfx6vezpz8mz/YmadNPJfUsnepYDbhfwDnX5mic8RrR53uTF/vnGwfnadNPJfUsXZhmEAPuF3Cup3LGzTE5ozauL3/+en34O236qaSepXkM4CaB8+BcM+c4nPNujswZu9F9d/onbfqppJ6li4CNYMDOwYBdRQP2ORiwb7IA+y762n7KsMbkWiupscsCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH/r8A1/u6qxo8edjsBChgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3AJwtxvZyp9t1di5AQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAWwCuMbnW7Q1tNXbEGtsOGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwbcArD0P4ABC2ABLIAFsAAWwIAFsAAWwAJYrhpYBhnAgKXlXACA2mlo5KrPSwAAAABJRU5ErkJggg==" alt="sigil of Perrin Aybara" loading="lazy">
+        <div class="pcap"><div class="pn">Perrin Aybara</div><div class="pe">the Wolfbrother, Lord of the Two Rivers</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/egwene-alvere.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC2ElEQVR42u3dz0pUURwHcFdBIPQGLly5kzYi4aKVK+kB3AjRtnUQ0gPoxhfIrU/gwkVv0M7QyiiJhIIcR6exaOU32ro4oMfruX7gy+Hwu8Pl3vO5/2YOMzNx7/6k9DgThgCw9AJ4avut9CaAAQtgASyABbAAFsCABbAAFsACWLoDfrC51mG6nX3rdt8BAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIBbAF7ZWStM+cBN7w4KUz4cq4+OC1O+zvLtLN/38vEEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQNuAbjGNFy3GDUOmhqjBBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3AJwjZ2sMQXZv+0EDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQNuAbjGD/+VD9wV1zm9O7j2dV5xOxueD749wDPvBg/3Tub2h/P7w7TppwK4J8CzeycL74eLH0+XDk6ffPrXpp9K6oCbB47i4w/DuC5/Pnt6OHp2OEqbfiqp/zcG3CpwrsM5U2O58mX0/OuvF9/GL4/GadNPJfUszWsAtwqce22uxjlfI/rqaLz+/Xzjx3na9FNJPUvzGsCtAud5KnfcXJNz1sb19c/fW8d/0qafSupZmtcAbhI474jyzJzrcO67uTLn3I3um7O/adNPJfUsnQfsDAbsHgzYUzRg74MB+yQLsM+ib2y6sMYP/7Xyt1zl+97wfDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPAlqcHW7de/aqyzxqEAGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwbcAnCN6cJuh7jGoWA+GDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwZ8V4Fr7GT5Omv83VX5Orvdd8CAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4BaA5fYHMGABLIAFsAAWwAIYsAAWwAJYAMt1A0svAxiwtJwLQapW8H6yZ7oAAAAASUVORK5CYII=" alt="sigil of Egwene al&#x27;Vere" loading="lazy">
+        <div class="pcap"><div class="pn">Egwene al&#x27;Vere</div><div class="pe">the Amyrlin Seat, the Flame of Tar Valon</div>
+        <div class="pnat"><span class="dot" style="background:#e6a849;box-shadow:0 0 7px #e6a849"></span><span style="color:#e6a849">spiritual</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/nynaeve-almeara.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC20lEQVR42u3dvWoVQRgG4FSBgOAdWKSyC2kkiIWVlXgBaQLB1loQ8QJi4w1o6xVYWHgHdkriHzGIAQP5OcnxREnlG2wVPtBxneWBl2H4dtnsznP255xhydz8wgUZceYMAWAZBfClZy9lNAEMWAALYAEsgAWwAAYsgAWwABbAMhzw2vONYu5fPShm8dVhMRefbBRTn1Orb7O+n/Vjr48nYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwD8D1g6wPcYuBa5Fhjx0wYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDLgH4BYTYfXhqG+zPgk47H7WxxMwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDLgH4BZTey0wht1miylIwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgHoDrU2YtJhb/cIh/+bFr8VGoH3t9PAH/Fvjy68PlzaMrW5OVrUna9FMBPBLgpc2ja28mN94d33x/fOvDeZt+KqkD7h44itffTuK6un2yvjO9vTNNm34qqf80BtwrcK7DOVNjufZxeufT17ufZ/d2Z2nTTyX1LM06gHsFzr02V+OcrxF9sDt7+OX00d5p2vRTST1Lsw7gXoHzPJU7bq7JOWvj+nj/29OD72nTTyX1LM06gLsEzjeiPDPnOpz7bq7MOXej++LkLG36qaSepSuAncGA3YMBe4oG7HswYL9kAfZb9D97+azFq1othrjFX29xGgAGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcAPOwLWMP+a6phX7wDDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMeF/CwA9diYrHFEQEGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAY8LuMVwtJjaG99+AgYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIAB9wAs/38AAxbAAlgAC2ABLIABC2ABLIAFsPxtYBllAAOWnvMDtmYXuQqHKysAAAAASUVORK5CYII=" alt="sigil of Nynaeve al&#x27;Meara" loading="lazy">
+        <div class="pcap"><div class="pn">Nynaeve al&#x27;Meara</div><div class="pe">the Wisdom who broke the limits of Healing</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/elayne-trakand.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC4klEQVR42u3dvWoUURgG4FSCIHgHFlbpxEaCWFhZhVyATUBsrQURLyA23oBpvYIUKXIH6SKJf2gQAwom2WTdKFa+YqvwgZ6MZ/LAy+HwzbIzc56dn91hZufOnb8gI86cIQAsowC+tLYpowlgwAJYAAtgASyABTBgASyABbAAluGAH17fL+by1kEx9etf9bm3SH056+tenztgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwMvrK8W0uJuqxcC1+CDWUx9PwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgHoDri35xdaWY+hD3kvq618cTMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgx4XMD1C2H1tLi0V3/PFmsEGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwY8LuD6TV31S2an9tjB38K3mHuLdQf8R+D55wdXtw+v7UwWdiZp008F8EiAr2wf3ngxufXqaPH10dKbn236qaQOuHvgKN58OYnr7bfHd3and3enadNPJfVfxoB7Bc5+OFtqLJffTe+9/3L/w+zB3ixt+qmknql5DeBegXOszd4422tEH+3NHn88efLpJG36qaSeqXkN4F6Bcz6VI272ydlq4/r089dn+9/Spp9K6pma1wDuEjjfiHLOnP1wjrvZM2fbje7G8fe06aeSeqYuALYFA3YMBuwsGrDvwYD9kgXYb9GnBjzs3121eOjhsOsOGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwbcA3CL27/qF9da3NRVf88WDyisjydgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwC0GbtgPzbAPPTwTz6oEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQP+K+AWN3W1GOL6cgIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAZ9VYPn/AxiwABbAAlgAC2ABDFgAC2ABLIDlXwPLKAMYsPScH8yhlVe1dbQUAAAAAElFTkSuQmCC" alt="sigil of Elayne Trakand" loading="lazy">
+        <div class="pcap"><div class="pn">Elayne Trakand</div><div class="pe">Daughter-Heir of Andor, the Green</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/aviendha.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC10lEQVR42u3dvWoUURgG4FSCIHgHFlbpxEaCWFhZhVyATUBsrQMiXkBsvAHTegUWFrmDdJHEPzSIAQWTbLJuFCtfsU1xIDkZv/GBl8Phm2F2cx5mZnc/djN34eIlGXHmLAFgGQXwlRcbMpoABiyABbAAFsACWAADFsACWAALYBkOePnl6pnn6uZ+Y9o7Ze2P3n7M9ufZY5UAAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIArAD+6udeYy2urjemxHFUevX09AQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAKwD3WI4ejcVhj6kfDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQP+X4HbG2Ht6fHls2GP2WOVAAMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAKwD3+ALWuf2U4Yktv2GBC/eD/x3g+Vf717cObmxPFrYnGTNPBfBIgK9tHdx6Pbnz9nDx3eHS+z9j5qmkDrg8cBRvv5nE9e6Ho3s70/s704yZp5L6X2PAVYFzHc6ZGsvlj9MHn76vfJ493J1lzDyV1LM1+wCuCpx7ba7GOV8j+nh39uTL8dOvxxkzTyX1bM0+gKsC5/VU7ri5Juesjeuzbz+e7/3MmHkqqWdr9gFcEjg75zVzrsO57+bKnHM3uutHvzJmnkrq2boA2BkM2D0YsFfRgL0PBuyTLMA+iz63dmGVnx0c9nkW7gcDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAGfql3YownY499ytR+zR2OxcD8YMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgz4hAz7c35V2oU9vngHGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwZcAbh9OdrbcD2agD3S4y8q3A8GDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQOWkgEMWAALYAEsgAWwAAYsgAWwABbActbAMsoABiyV8xvW+31cjPVkhwAAAABJRU5ErkJggg==" alt="sigil of Aviendha" loading="lazy">
+        <div class="pcap"><div class="pn">Aviendha</div><div class="pe">Maiden of the Spear, Wise One of the Aiel</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/min-farshaw.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACzklEQVR42u3dvWpUQRgG4FRCQPAOLFKlCzYSxMLKSryANAGxtRZEvABtvAFtvQILi9yBnZL4hwYxoGCSTdaNYuUrliJ8hePujA+8DMN3DrvnzMP52R12z9Kp5dMycJYMAWAZAvjs46cyTAADFsACWAALYAEsgAELYAEsgAWwzA+4Pld15uHdYsabp2ux74ABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwD0A1zd980k1K88OBkt93+vjCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ANwfSdvX9gvpr6T9dccbzsBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIDHAq4PR4ufatWHuMVPyuoBDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMeC3i+Q1x/zT/9yu334ny3s+P/qlwc4NXnB+e2D8/vTNZ3JmnTTwXwIMBr24cXX0wuvzq68vro6pufbfqppA64e+AoXno5ievG2+Nru9Pru9O06aeS+i9jwL0C5zycIzWWm++mN95/uflhdmtvljb9VFLP0qwDuFfgXGtzNs7xGtE7e7N7H0/ufzpJm34qqWdp1gHcK3Dup3LFzTk5R21cH3z++mj/W9r0U0k9S7MO4C6B84ko98w5D+e6mzNzjt3obh1/T5t+Kqln6TpgRzBg12DA7qIB+xwM2DdZgH0X/c+mC8d7NFWLdDwfDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGvHB/ZdjisVwt3t1/VQIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCA/1fgFmwtJtdaDHGLycr6dgIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcAXJ+Ga/EIrfFesz6egAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDL4gcwYAEsgAWwABbAAhiwABbAAlgAy98GliEDGLD0nB+Lpvu+Ei3jgwAAAABJRU5ErkJggg==" alt="sigil of Min Farshaw" loading="lazy">
+        <div class="pcap"><div class="pn">Min Farshaw</div><div class="pe">the viewer who reads the future in images</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/moiraine-damodred.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACzUlEQVR42u3dvUocURgGYKtAQMgdpEiVLtgEkRRWVsELSCOIbWohiBeQNLkB0+YKLFLkDuwU/xISCREU/FndrAarvCGtwoF4GM/4wMvh8M0wO3se5md32D1jDx6OS48zZggASy+AH6+uSW8CGLAAFsACWAALYAEMWAALYAEsgKU74BpPteY+vb31PPpQmhqvXmOUAAMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAWwB+sn5SmKWp48KUb7M85Rg1Xr3GewcMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA24BuMaDsPI32b9t3ovnwYABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgewRc/iCsxo/PusWosZ/l4wkYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwCcI2/CKzxk7JrdylbaGI/rw3gGwfu6cbJxObp863B5NYgbfqpAO4J8LPN0xfbg5nds5dfzma//m3TTyV1wM0DR3F6ZxDXV9/O5/eGC3vDtOmnkvo/Y8CtAuc8nCM1lnPfh69//Fr8OXqzP0qbfiqpZ2nWAdwqcK61ORvneI3o8v7o3cHF+8OLtOmnknqWZh3ArQLnfipX3JyTc9TGdeXo8uPx77Tpp5J6lmYdwE0CZ+XcM+c8nOtuzsw5dqP7+fwqbfqppJ6lk4AdwYBdgwG7iwbsczBg32QB9l30fwK3Mo1Ut6kxSoABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwC0AtzKJVY2pqbqdbAswYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDLhfwP17CNjtpGCAAQMGDBgwYMCAAQtgwIABAwYMGDBgwIABSwvA5X+9V54a00h1u80aowQYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwCsNz9AAYsgAWwABbAAlgAAxbAAlgAC2C5bWDpZQADlpbzB8Ccr7iC0yWKAAAAAElFTkSuQmCC" alt="sigil of Moiraine Damodred" loading="lazy">
+        <div class="pcap"><div class="pn">Moiraine Damodred</div><div class="pe">the Blue who spent forty years on one cause</div>
+        <div class="pnat"><span class="dot" style="background:#e6a849;box-shadow:0 0 7px #e6a849"></span><span style="color:#e6a849">spiritual</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/cadsuane-melaidhrin.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC4ElEQVR42u3dvWoUURgG4FQBIeAdWFilExsJYmFlJV6ATSDYWgsiXkBsvAFtvQILi9yBnZIfFRPEgIJJNlk3ipWvpI3wFTlMzuSBl8Phm2V29jzzt3sYdm7+0oKMOHOGALCMAvjK67cymgAGLIAFsAAWwAJYAAMWwAJYAAtgGQ748svVYp7c3Dvz1GfKlt+sFlNfZ4tPVB9PwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgHoDrw3H13X4xLYajvp0tdtn6Z69vJ2DAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8LiA6xN29eGop87W4t1bTFYCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAGPC7jFNFyLnaa+zmGnNQEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgHsArg/HORy4Ux/2GnZHrAfwf4EX3+9fXz+4sTFZ2pikTT8VwCMBvrZ+cGtzcufD4d2Ph/c+/WvTTyV1wN0DR/H21iSu9z8frexMH+xM06afSuonxoB7Bc55OEdqLJe3pw+//Hz0dfZ4d5Y2/VRSz9K8BnCvwLnW5myc4zWiT3dnz74dP/9+nDb9VFLP0rwGcK/AuZ/KFTfn5By1cX3x49ervd9p008l9SzNawB3CZxvRLlnznk4192cmXPsRnft6E/a9FNJPUuXADuCAbsGA3YXDdj3YMB+yQLst+hzOF047BTksNt5IeaDAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMAXCLi+6S2mC1v8LVd9nS2mC+vjCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ANwfeCGnbBr8ddULSYr6+MJGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwbcA3B9OHp5TG3YdXb8dCFgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGLB0GcCABbAAFsACWAALYMACWAALYAEsZw0sowxgwNJz/gLZXWkPfE2kOwAAAABJRU5ErkJggg==" alt="sigil of Cadsuane Melaidhrin" loading="lazy">
+        <div class="pcap"><div class="pn">Cadsuane Melaidhrin</div><div class="pe">the most renowned living Aes Sedai</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/siuan-sanche.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC1klEQVR42u3dvWoVQRgG4FRCIOAdWKRKF2wkiIVVKvEC0gRCWmtBxAuIjTegrVeQwiJ3YJeQHxUNYkDBJCc5nihWecVWYSAZJrN54GUYvl3O/jzszznLnJ26MT0jA86UXQBYBgF8a/2tDCaAAQtgASyABbAAFsCABbAAFsACWNoBlz+ruvlqrTA1PrNG2m47YMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwD8BP7x5eepbfrBVmdvOoMG0/s8ZeAgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED7gG4xmO48o1sC1y+njX2EmDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8LCAy3dx+QCstg8Ba6wnYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBjwdQVu+weF/1xQOBsu/YLbDvi/S5/bOrq9fXxnZ7SwM0qbfiqABwI8v318b3e0+O7kwfuThx/+tOmnkjrg7oGjeH9vFNelj6cr++PV/XHa9FNJ/a8x4F6Bcx7OkRrL5U/jR59/PP4yeXIwSZt+KqlnauYB3CtwrrU5G+d4jeizg8nzr2cvvp2lTT+V1DM18wDuFTj3U7ni5pycozauL7//fH34K236qaSeqZkHcJfA+UaUe+ach3PdzZk5x250N05/p00/ldQzdQGwIxiwazBgd9GAfQ8G7JcswH6LviBwjQdh5YO62r6aqsbgs/L9CRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGPCzg8uFfNXZxjZSvZ42hb4ABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwD0Al696Ly+cavsCr/IABgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH3AFzj5VBtB3XVAK7xsi3AgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOAegOXqBzBgASyABbAAFsACGLAAFsACWADLZQPLIAMYsPSccwduh/qf+Bt3AAAAAElFTkSuQmCC" alt="sigil of Siuan Sanche" loading="lazy">
+        <div class="pcap"><div class="pn">Siuan Sanche</div><div class="pe">the fisherman&#x27;s daughter who became Amyrlin</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/verin-mathwin.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC1klEQVR42u3dvWoUYRQG4FSCIHgHFqnsxEaCWFhZiRdgExBba0HEC4iNN6CtV2Bh4R3YRRL/0CAGFMxmk3WjWPmKN3BAZ4czPPDy8XFmmJ2Zh/nZ/ZidtVOnz8iEs2YXAJZJAJ979lImE8CABbAAFsACWAALYMACWAALYAEs4wHfv3zQIvUxtS5bBBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3AG4vuM2n28Vs749K6a+zPqOG3c96/sTMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4A/DZJ1vFjDtg1+XT6/sTMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4A3B9I+urXh9cqy9ziAyxno2fLgQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA17Rw2crW+b69qzFek7t6cKhl3n+1ezizuGl3fnG7jxt+qkAngjwhZ3DK6/n194eXX93dOP9nzb9VFIH3B44ilffzON688Pxrb3F7b1F2vRTSf2vMeCuwDkP50iN5ebHxZ1P3+9+Xt7bX6ZNP5XUMzXzAO4KnGttzsY5XiP6YH/58MvJo68nadNPJfVMzTyAuwLnfipX3JyTc9TG9fG3H08PfqZNP5XUMzXzAG4JnG9EuWfOeTjX3ZyZc+xG98Xxr7Tpp5J6pm4AdgQDdg0G7C4asO/BgP2SBdhv0SsbLqz/8V89476aatwtAgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED7gA8xJBZlwG7cbcIMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4A3D9T/rqQ2ZDvEZq3GXWt73xm88AAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwID/abhwiJdDDfFarnE/vfF4MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYsLQMYMACWAALYAEsgAUwYAEsgAWwAJb/DSyTDGDA0jm/AUPxpb0gyrX3AAAAAElFTkSuQmCC" alt="sigil of Verin Mathwin" loading="lazy">
+        <div class="pcap"><div class="pn">Verin Mathwin</div><div class="pe">the Brown who wore the enemy&#x27;s coat for seventy years</div>
+        <div class="pnat"><span class="dot" style="background:#e6a849;box-shadow:0 0 7px #e6a849"></span><span style="color:#e6a849">spiritual</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/pevara-tazanovni.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC0ElEQVR42u3dvWoVQRgG4FRCIOAdWKRKF2wkiIWVVfAC0gTE1loQ8QJi4w2Y1iuwsMgdpDMk/qFBDCiY5CTHE8XKV2wNfKDjOssDL8Pw7TLZs0/2J2fI7tyF+QUZcebsAsAyCuBLT7dlNAEMWAALYAEsgAWwAAYsgAWwABbAMhzw4vOjYi5ubhRz/+phMevPNooZdsz6Z6/vT8CAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4B6A65ve4kPW/++q/tPrY7b45a4HMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4B+D65FqLZ/O1mLCrj9niE9X3J2DAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYcA/ALSbXhp2wG3Y762MCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH3ADzs4/z+cBIwI3Sxnb8N4HN33NLO0eXd4yt7k5W9Sdr0UwE8EuDl3eNrLyY3Xp2svj65+eZnm34qqQPuHjiK119O4rr29vTW/vT2/jRt+qmk/ssYcK/AOQ/nSI3l+rvpnfdf7n6Y3TuYpU0/ldSzNOsA7hU419qcjXO8RvTBwezhx7NHn87Spp9K6lmadQD3Cpz7qVxxc07OURvXx5+/Pjn8ljb9VFLP0qwDuEvgrJx75pyHc93NmTnHbnS3Tr+nTT+V1LN0BbAjGLBrMGB30YD9HQzYN1mAfRf9zx5lOOzU3vjGBAwYMGDAgGEABgwYMGBjAgYMGDBgwIABwwAMeFzA4s1nAlgAAwYMGDBgwIAFsAAWwIABAwYMGDDg81N/5VN9cq3Fa7mG3U7AgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOBxAdcfvVdPC7YWr6aqb2eLvQQYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwDsPz/AQxYAAtgASyABbAABiyABbAAFsDyt4FllAEMWHrOD+E83kXyNu0EAAAAAElFTkSuQmCC" alt="sigil of Pevara Tazanovni" loading="lazy">
+        <div class="pcap"><div class="pn">Pevara Tazanovni</div><div class="pe">the Red who bonded the Black Tower</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/lan-mandragoran.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACv0lEQVR42u3dvWpUQRgG4FQBQfAOLKzSiY0EsbCyCrkAm4DYphZEvIDY5AZM6xWkSJE7SBdJ/CMGMaBgkk02G8XKV2wjDJjhZGYfeBmG7xzOGc6z52d32dmZ2WvXpePMOASApQvgm+tb0k0AAxbAAlgAC2ABLIABC2ABLIAFsAwHfGv76NLz/N5hYW6srQyY8nHWOEqAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDTCjzsIa7x8gIMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA55W4KWNlcKUD718br4aey/fZvk4a+wdMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4BeBh2cpT/iVgjb3XeCkABgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAG3ADzsFIH/uc0Lf2o27DjLA/if25x7c3Rn5/ju7mh+d5Q2/VQAdwJ8e+f4/tvRw/cnCx9OFj/+adNPJXXAzQNH8cG7UVwf7Z0+3h8/2R+nTT+V1P8aA24VONfhnKmxXPo0Xv589vTL5NnBJG36qaSepVkHcKvAudfmapzzNaIvDiYvv56vfjtPm34qqWdp1gHcKnCep3LHzTU5Z21cX33/8frwZ9r0U0k9S7MO4CaB844oz8y5Due+mytzzt3obp7+Spt+Kqln6TxgZzBg92DAnqIBex8M2CdZgH0WfQWnMqzxk7L+xgkYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBjytwAJYAAMGDBgwYMcasAAWwAIYMGDAgAEDBiy9ANeYIrC/P8aqMeUiYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwX8Dlk/TV+BupYbdZY3pEwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgFoDl6gcwYAEsgAWwABbAAhiwABbAAlgAy2UDS5cBDFhazm+bj8d4kIALswAAAABJRU5ErkJggg==" alt="sigil of al&#x27;Lan Mandragoran" loading="lazy">
+        <div class="pcap"><div class="pn">al&#x27;Lan Mandragoran</div><div class="pe">the uncrowned King of Malkier, the Warder</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/thom-merrilin.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACzUlEQVR42u3dz0pVQRwHcFdBEPQGLVq5izYi0aJVK/EB2gjRtnUg0gPYphfIbU/gwoVv4M7QsiiJBIXUq7dr0qpvuLWYhdM0pw98GYbfOZ7rmY/nz73DuU5du35DBpwpQwBYBgF8a3VDBhPAgAWwABbAAlgAC2DAAlgAC2ABLO2AF9aWC1M+q1W+zV5SY98BAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIB7AL65slyY8p0s3+bSvcOGabvvgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDf3jwqTPlEWC9DXP57lu97+XgCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH3ANwWo+3jX23/aAADBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgHsArvHFf+VTZuW5dIwurdd49RqjBPi3wNNvju5uHc9sj2a3R2nTTwXwQIDvbB3ffzt6uHMy9/5k/sOvNv1UUgfcPXAUH7wbxfXRx9PHu+Mnu+O06aeS+oUx4F6Bcx7OkRrLhU/jp5+/PfsyWdybpE0/ldSzNOsA7hU419qcjXO8RvT53uTF/tnLg7O06aeSepZmHcC9Aud+KlfcnJNz1Mb11dfvrw/P06afSupZmnUAdwmc5J455+Fcd3NmzrEb3fXTH2nTTyX1LJ0F7AgG7BoM2F00YO+DAfskC7DPov/adGHbf4zVy6t3PB8MGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwb8px++wgzvqwxrjBJgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPCwgGtMrtV4/Kt8m233HTBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAfgGlNmNSbs2m7T04WAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4P8VWP79AAYsgAWwABbAAlgAAxbAAlgAC2C5amAZZAADlp7zEzy/uYwtptPIAAAAAElFTkSuQmCC" alt="sigil of Thom Merrilin" loading="lazy">
+        <div class="pcap"><div class="pn">Thom Merrilin</div><div class="pe">the gleeman with a sword in his heart</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/loial.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC3ElEQVR42u3dvWpUQRgG4FRCQPAOLFKlCzYSxMLKSryANAGxtRZEvIDYeAPaegUWFrkDOyXxDw1iQMEkm6wbxcpXbA0MmM91hgdehuE7y9mcec7f7nCyC2cWz8rAWTAEgGUI4PNPnskwAQxYAAtgASyABbAABiyABbAAFsAyP+BzjzYac/fSXmOWnu+fetafbjSm4t3bt719PAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgMcCbh/i9qep2t99vuts33bAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOCxgCs2sn1yrf3d26f22tfZ/ndW7NyAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMBjAVc8KFYxxBXrrNi9AAMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAewCueKyq4p8JnrTP/c2O2J6KR/QAnwi8/GL/wtbBxe3J6vYkbfqpAB4EeGXr4PLLydXXh9feHF5/+6tNP5XUAXcPHMUrryZxXXt3dGNnenNnmjb9VFL/bQy4V+Cch3OkxnL9/fTWh6+3P87u7M7Spp9K6lma1wDuFTjX2pyNc7xG9N7u7P6n4wefj9Omn0rqWZrXAO4VOPdTueLmnJyjNq4Pv3x7vPc9bfqppJ6leQ3gLoGT3DPnPJzrbs7MOXaju3n0I236qaSepauAHcGAXYMBu4sG7HMwYN9kAfZd9D+bLqz4Ca3x1tnxfDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPAfUvFY1Xyn4SqmNSu2HTBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAfg9oGrGOKKn+WqmACtGCXAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOAegCsmwuY7DdfLFgEGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcALP9/AAMWwAJYAAtgASyAAQtgASyABbCcNrAMGcCApef8BC1mS7cptjOuAAAAAElFTkSuQmCC" alt="sigil of Loial" loading="lazy">
+        <div class="pcap"><div class="pn">Loial</div><div class="pe">the Ogier who went Outside, the author</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/tam-althor.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC2ElEQVR42u3dvWpUQRgG4FRCQPAOLFLZhTQSxMLKSryANIGQ1loQ8QJikxvQ1iuwsPAO7JTEJKJBDCiYZJPNRrHyFdsUX+F4MocHXobhO8uEnSfnZ3eZc+auzF+VEWfOFACWUQBff/lGRhPAgAWwABbAAlgAC2DAAlgAC2ABLMMBP751WMzC26Ni6mOuvtoopv6bWn3MYd87YMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwD8DDrqZqMXH1MYd974ABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwD0A16ej/jNcfcxrzzeKqf/1+pjDvnfAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOAegOvTUf/BzpiVAAYMGDBgwDAAAwYMGLAxAQMGDBgwYMCAYQAG3ANwfbFUi+losUytPmYLto5XF14e4Bvvjpa2jm9uT5a3J2nTTwXwSIAXt45vv5/c3T25t3dy/8OfNv1UUgfcPXAU7+xM4rry8XRtf7q+P02bfiqp/zUG3CtwjsPZU2O5+mn64PPZwy+zRweztOmnknq25jWAewXOuTZH4+yvEX1yMHv69Xzz23na9FNJPVvzGsC9Aud6KmfcHJOz18b12fcfLw5/pk0/ldSzNa8B3CtwrplzHM55N0fm7LvRfX36K236qaSercuA7cGAnYMBu4oG7HMwYN9kAfZd9H97MFYvNygc9qaHHT/5DDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYM+ILUb9LX4nZ+vTyWq8UsAQYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIAB9wBcX1bVYvHZsI+marH4rON7VQIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAV+QFlM8vsddtfj3AgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED7gFYLn8AAxbAAlgAC2ABLIABC2ABLIAFsPxrYBllAAOWnvMbPQLqTCLovjwAAAAASUVORK5CYII=" alt="sigil of Tam al&#x27;Thor" loading="lazy">
+        <div class="pcap"><div class="pn">Tam al&#x27;Thor</div><div class="pe">the blademaster who found the Dragon on the mountain</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/birgitte.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACzUlEQVR42u3dvWpUQRgG4FSCIHgHFlZ2YiNBUlhZiRdgExBba0HECzCNN2Bar8DCIneQTkn8Q4MYUDDJJutGsfIV68AHyTDM4YGXYfjO4fw9nJ/d4ewunTt/QSacJYcAsEwC+NLLTZlMAAMWwAJYAAtgASyAAQtgASyABbD0A764/vTMUx//qi9z9VU1fbezHsCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4BGAH9/YK6a+6Zdf7xdTZ6tj1JdZ3876vtePJ2DAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8AjALXayBUaLgcUWw4X14wkYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBjwt4L6vao2ydsCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4GkB1wfX+r7UddKKTjOw2OIluXoAnwh85c3+ta2D69uz5e1Z2vRTATwR4KtbBytvZ7feH97+cHjn4782/VRSBzw8cBRvvpvF9e6no3s78/s787Tpp5L6f2PAowLnOpwzNZarn+cPvvx8+HXxaHeRNv1UUs/UzAN4VODca3M1zvka0Se7i7Vvx8++H6dNP5XUMzXzAB4VOM9TuePmmpyzNq7Pf/x6sfc7bfqppJ6pmQfwkMCZOc/MuQ7nvpsrc87d6G4c/UmbfiqpZ+oyYGcwYPdgwJ6iAfscDNg3WYB9F31K4BYDYX2H9voOAtaXCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGPAJwi798ssxKAAMGDBgwYBiAAQMGDNgyAQMGDBgwYMCAYQAGPAJwiz+xajEM1+KVsr77DhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGPAJwX7YWGH3XPvBvVQIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAcuQAQxYAAtgASyABbAABiyABbAAFsBy1sAyyQAGLCPnL/QBmb6P7SXxAAAAAElFTkSuQmCC" alt="sigil of Birgitte Silverbow" loading="lazy">
+        <div class="pcap"><div class="pn">Birgitte Silverbow</div><div class="pe">the Hero of the Horn, ripped from the Wheel</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/tuon.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC3UlEQVR42u3dz0oVURwHcFdBEPQGLlq5izYh0cJVK/EB3AjRtnUQ0QPYxhfQbU/gwoVv4E5R+0NJJBSkXr1ei1Z9o2UIB/RwPMMHvhwOv7kMM+dz58+9w8xM3bp9RwacKUMAWAYBPL2+JYMJYMACWAALYAEsgAUwYAEsgAWwAJZ2wPe2jwvz6tFRYcqvf91dW26Y8uUsX/fy8QQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuMait/3S9LJGgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQCXX1xb2rj+1Bi48nnWWKPy8QQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuHw4arzpqe3lwhpr1PHdhYABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwFe6XFhjiMsvw102mv8Xy+fZ9uGMgC8Fntk5frB78nBvNLs3Spt+KoAHAnx/9+Tx/ujJ+9P5D6cLH/+26aeSOuDugaM4924U18VPZ08Pxs8OxmnTTyX1f8aAewXOfjhbaiyXPo+ffzl/8XXy8nCSNv1UUs/UfAZwr8A51mZvnO01oq8PJ2++Xax8v0ibfiqpZ2o+A7hX4JxP5YibfXK22riu/vj59uhX2vRTST1T8xnAXQLnF1HOmbMfznE3e+Zsu9HdPPudNv1UUs/UWcC2YMCOwYCdRQP2Oxiwf7IA+y/6isDli17jlrK2N5/VuE2tfDwBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIB7AC4fuLap8VVoG8CAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4B6AazzOr8ZrpNrOs8YoAQYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABDwu4xoP/aryWq8Y8a6w7YMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwD8By8wMYsAAWwAJYAAtgAQxYAAtgASyA5bqBZZABDFh6zh92E6cM/jY6JwAAAABJRU5ErkJggg==" alt="sigil of Tuon Athaem Kore Paendrag" loading="lazy">
+        <div class="pcap"><div class="pn">Tuon Athaem Kore Paendrag</div><div class="pe">Empress of the Seanchan, Daughter of the Nine Moons</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-dark-one.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC2klEQVR42u3dvWpUQRgG4FSCIHgHKazSSRoJwSJVquAF2CwEW+uASC4gNt5A0uYKUqTIHdgpiX9oCAYU8rPJulGsfMVWYcCdHOfsAy/D8J1lz+48e352D3N25sbNW9LjzBgCwNIL4NmdF9KbAAYsgAWwABbAAlgAAxbAAlgAC2DpDniwu1GY21uTT/nay6+ptfKOAAMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAWwDuFqM85a+zxtprfGgAAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwICnFbjGcNx5eVaYVt4RYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwC8Dll8yeLp5OPOXD0e1zlqd8PAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgPsFXGPg/nHtf7w4WOMjW2PqG+C/rn3u1dn8/vm9g+HCwTBt+qkA7gnw3f3z+6+Hy28vVt5dPHj/q00/ldQBNw8cxaU3w7g+/HC5ejh6dDhKm34qqf82BtwqcPbD2VJjOfg4enz0de3T+MnxOG36qaSepXkM4FaBc6zN3jjba0TXj8fPPl89/3KVNv1UUs/SPAZwq8A5n8oRN/vkbLVx3Tz5tn36PW36qaSepXkM4CaB840o58zZD+e4mz1ztt3o7l3+SJt+Kqln6QJgWzBgx2DAzqIB+x4M2C9ZgP0WfW2Tz8qnf3V7i8Aat1ysMfUNMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4BeDyl14DuAZbjUt7NUYJMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgy4BeDyCVjd/o1Ut89ZnvLxBAwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDbgG4xuSzGhcWK91kfOKZitmFgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOApApb/P4ABC2ABLIAFsAAWwIAFsAAWwAJYJg0svQxgwNJyfgIo5Yotcihg7gAAAABJRU5ErkJggg==" alt="sigil of The Dark One" loading="lazy">
+        <div class="pcap"><div class="pn">The Dark One</div><div class="pe">the imprisoned source of the Shadow</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/ishamael.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC3ElEQVR42u3cvWoUURgG4FRCIOAdWKRKF2wkiIWVVcgF2AQkrbUg4gVo4w2Y1itIkcI7sIvkR4MGMaBgkk3WjWLlK7YKX+FxOMMDL4fDN8uc2fPs/OwOs3NX5hdkxJkzBYBlFMDXtl7JaAIYsAAWwAJYAAtgAQxYAAtgASyAZTjgRzdPiqnf1bq6+aSY9e1q6qPX11nfzvro9fkEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQPuAbjFFNff5OLOaTH17ayvs8WHu76dgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDXb5nVJ27Yj0ILtvro9fkEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMeF3CLW2YtHmjrZTsBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIB7AB72llmL0VtgtBgd8F9HX3p9en337MbeZGVvkjb9VACPBHh59+zW/uTOm/PVt+drh7/a9FNJHXD3wFG8fTCJ6913F/eOphtH07Tpp5L6b2PAvQLnOJw9NZbr76f3P3x98HH28HiWNv1UUs/SvAZwr8A51+ZonP01oo+PZ08/XT77fJk2/VRSz9K8BnCvwLmeyhk3x+TstXF9/uXbi5PvadNPJfUszWsA9wqca+Ych3PezZE5+250X178SJt+Kqln6QpgezBg52DArqIB+x4M2C9ZgP0W/d/+yrDFQ13jW2fH/1UJGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwb8h7S4EVZ/ky0e/xp29Pp8AgYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIAB9wBcfwCrPh31dbZ4/KvF6C3eO2DAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYcA/ALSZu2D89HHY7O74fDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGLF0GMGABLIAFsAAWwAIYsAAWwAJYAMu/BpZRBjBg6Tk/Aec9AQgxl87xAAAAAElFTkSuQmCC" alt="sigil of Ishamael" loading="lazy">
+        <div class="pcap"><div class="pn">Ishamael</div><div class="pe">the Betrayer of Hope, first of the Forsaken</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/moridin.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC6UlEQVR42u3dvWoUURgG4FRCQPAOLFKlCzYSxMLKSryANAGxtRZEvABtvAFtvQILi9yBnZL4hwYxoGCSTdaNYuUrthYfjMfJGR54ORy+WcLOeTIzu3s4M0tnls/KhLNkCADLJIDPP30ukwlgwAJYAAtgASyABTBgASyABbAAlvGAzz2+P2I2n1Uz7t9sEcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4B6AV14cFFNfI3X30n4xdYxx/2Z93+vjCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ANw/a3XB66+k72kvu/18QQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuD5l1mJicdzFZy0mAevjCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3ANwfeBaLNUauKTsrxN5477Pju9VeXqAV18eXNg+vLgzW9+ZpU0/FcATAV7bPrz8anb1zdG1t0fX3/1u008ldcDdA0fxyutZXDfeH9/Ynd/cnadNP5XU/xgD7hU45+EcqbHc/DC/9fHb7U+LO3uLtOmnknq25jWAewXOtTZn4xyvEb23t3jw+eThl5O06aeSerbmNYB7Bc7nqVxxc07OURvXR1+/P9n/kTb9VFLP1rwGcJfA+UaUz8w5D+e6mzNzjt3obh3/TJt+Kqln6zpgRzBg12DAPkUD9j0YsF+yAPst+r9NF7YYuHEfTdUCuOP5YMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4EEPxmqx/KvFgrYWNyis73vHTz4DDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMetPisPhwtJhZb3KBw4H32Bv4rAAYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIAB9wBcf+stdrLFY7la3HawxSgBBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH3ACynP4ABC2ABLIAFsAAWwIAFsAAWwAJY/jWwTDKAAUvP+QV0LYDFYGPk4wAAAABJRU5ErkJggg==" alt="sigil of Moridin" loading="lazy">
+        <div class="pcap"><div class="pn">Moridin</div><div class="pe">Death, the Nae&#x27;blis, Ishamael reborn</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/lanfear.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC3UlEQVR42u3dPWoVURgG4FQBQXAHFlZ2kkaCWFhZiQtIExBba0HEBcTGDZjWFVhYuAM7QxJ/MEEMKJjkJtcbxco3C4gc0O9OzvDAy+HwTTKZmSdzZnIPk1lYvHBRRpwFhwCwjAL48ss3MpoABiyABbAAFsACWAADFsACWAALYBkO+PGN/ca0z2pdWl9rTPs6x7edgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQBfeXvQmNVXa41p38n2dVakYjvbjydgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPC4gCumzNp/+rDrbN93wIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgcQFXTK61P9RV8evVvs727ayYWAQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuH3TKybseknFUQJ8Zq5uHCxtHl7fmixvTdKmnwrgkQBf2zy8uT25/f7ozoejux9P2/RTSR1w98BRvPVuEteVT8f3dqf3d6dp008l9TpjwPMAzjicMzWWqzvTB59/PPwye7Q3S5t+KqlnadFYDXgewLnWZjTO+RrRJ3uzp19Pnn07SZt+Kqln6VLNSQx4HsC5n8oVN2Nyztq4Pv/+88X+r7Tpp5J6luZrAPcKnHvmjMO57mZkzrkb3dfHv9Omn0rqWboM2BkM2DUYsLtowP4OBuyTLMA+i57bdGH75FrFNFzFo28Ve9TxfDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGPA/TRe2H+KKB8UqXk1VsUcdzwcDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH/7ZsHed3VsP/KcNhXaAEGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcAPOzhqHgtV8U6K44SYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBhwD8By/gMYsAAWwAJYAAtgAQxYAAtgASyA5X8DyygDGLD0nD/rUU6HcViAcAAAAABJRU5ErkJggg==" alt="sigil of Lanfear" loading="lazy">
+        <div class="pcap"><div class="pn">Lanfear</div><div class="pe">the most powerful of the Forsaken, who loved the Dragon</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/graendal.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC8klEQVR42u3dvWoUURgG4FSCEPAOLKzsQhoJYmFlJV6ATUBsrQURLyA23oBpvYIUKbwDOyXxDw1iQMEkm6wbxcrXCxC+ZXOye4YHXg6Hb5bdmXnmd4eZWbpwcVkGnCWzALAMAvjy1isZTAADFsACWAALYAEsgAELYAEsgAWwzA/48fWDYq68Pizm0uZGMfVfX9/eKKb+nfXxrE97/dcBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIB7AG6B0YKtPp4tFoUWCw1gwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwC1mcT31p/jVx7P+nS2mqD6egAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDXL4TVZ1z9Vq367GiR+njWp73juwsBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIBnulzY4jLcjHd6TfXowFluFGtxWRPwf3P1zeHqztG13dHa7iht+qkAHgjwys7RjbejW++Pb384vvPxX5t+KqkD7h44ijffjeJ699PJvb3x/b1x2vRTSX1aY8CLBZztcNbUWK5/Hj/48vPh18mj/Una9FNJPUOn2lYDXizg7GuzNc76GtEn+5On306ffT9Nm34qqWfo6jQrMeDFAs7xVPa42SZnrY3r8x+/Xhz8Tpt+KqlnaD4DuEvgnBHlmDnb4ex3s2XOuhvdlyd/0qafSuoZugbYGgzYPhiwo2jAzoMB+ycLsP+iz+1RhnM/TTrzV1PNd9oBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIB7AG5xU1eLRwS2YGvxgMKOrwcDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAGfE/B8F5pepggwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDLgH4Ba3f9UnssVruerf2eIVWh2/+QwwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDFi6DGDAAlgAC2ABLIAFMGABLIAFsACWswaWQQYwYOk5fwE1NoHTTBN+NQAAAABJRU5ErkJggg==" alt="sigil of Graendal" loading="lazy">
+        <div class="pcap"><div class="pn">Graendal</div><div class="pe">the hedonist who breaks minds</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/demandred.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC1ElEQVR42u3dvWoUURgG4FSCEPAOLKzSBRsJkiKVVfACbBbE1loQ8QKSJjeQtF5BihTegZ2y8Q8NYkDBbDbZ7CpWvmK9cMA9Ts74wMvh8M0yOzPP/GUPmVm6cnVZepwlmwCw9AL4+v4L6U0AAxbAAlgAC2ABLIABC2ABLIAFsHQHfOPlaOEpH/96cvukMNf2tgpTPs/y5ayxlQADBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgFsAHhxsFabGJm4l5etevj0BAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwID7BVxjc5QPrpUvZ/k8a+yygAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA/QIu/wesGkNm3b5nqsZQafm3AwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABtwBcY2ivxq4wb5EWPs9/tu6A52KsvBrdHJ7eOhyvHY7Tpp8K4J4Arw5P11+P77w923x3dvf97zb9VFIH3DxwFDfejON678P5/aPJg6NJ2vRTSf2PMeBWgXMezpEay8HHycNPF48+Tx8fT9Omn0rqmZrPAG4VONfanI1zvEb06fF0+8ts5+ssbfqppJ6p+QzgVoFzP5Urbs7JOWrjuvvt+7OTH2nTTyX1TM1nADcJnNnmnjnn4Vx3c2bOsRvd5+c/06afSuqZugbYEQzYNRiwu2jA/g4G7JcswH6L/kvgGg/+6/aFU92+wKs8gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDALQDXeJRhjQf/1RiC7HaNAAMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAvTdpcamxiT2rEjBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYM+HI/yrDG7lVjnp5VCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQP+X4Hl8gcwYAEsgAWwABbAAhiwABbAAlgAy6KBpZcBDFhazi8EVDtKr1JYowAAAABJRU5ErkJggg==" alt="sigil of Demandred" loading="lazy">
+        <div class="pcap"><div class="pn">Demandred</div><div class="pe">the general consumed by the Dragon&#x27;s shadow</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/padan-fain.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC10lEQVR42u3dPWpUURgG4FSBgOAOLFKlC2kkiIWVlbiANAGxtRZEXEBs3IC2rsDCIjuwUxL/MEEMKJhkknGiWPlmAYFv0OPMuTzwcjh8N9yf88z9mTlkZmFx6ZIMOAuGALAMAvjKi1cymAAGLIAFsAAWwAJYAAMWwAJYAAtgmR3ww2uHxdRntS4/2yqmvvXNl1vF1NdZ38/6sde3DhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3APwbP+bqgVGi5dsiwAGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQ8LuD7Es53aazEF2WJiETBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAfgFru+/PqomBZbr6+zvp8ttg4YMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwDcH3KrAVbfZ0t0mI/6+MJ+MKsvDla2zm+ujta3x2lTT8VwAMBXt05vv52dPP9ya0PJ7c/nrfpp5I64O6Bo3jj3SiuG59O7+yP7+6P06afSurTGgOeL+Bch3OmxnJzb3zv84/7XyYPDiZp008l9Syd6loNeL6Ac6/N1Tjna0QfHUwefz178u0sbfqppJ6la9OcxIDnCzjPU7nj5pqcszauT7//fH74K236qaSepfkbwL0C55k51+Hcd3Nlzrkb3e3T32nTTyX1LF0H7AwG7B4M2FM0YO+DAfskC7DPov/bdGGL4WjxtYP1dbZ4KXQ8HwwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBvxXwPWB6+WnqVocEWDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8LCAZzvELb4isJcjAgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED7gG4lx+x6mWd9fEEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQPuAVjmP4ABC2ABLIAFsAAWwIAFsAAWwAJY/jWwDDKAAUvP+QN66fCa13IAoQAAAABJRU5ErkJggg==" alt="sigil of Padan Fain" loading="lazy">
+        <div class="pcap"><div class="pn">Padan Fain</div><div class="pe">the peddler of madness, a hatred all its own</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-wheel.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAACwElEQVR42u3dv0ocQRwHcCtBCPgGKazSiU2QkCKVVfABbASxTR0Ikge4NL5A0uYJLFLkDewSNP4hkZADBfXuPE9DqnxD6sAWN2xm7wNfhuG3y57u52Z3veHGufmFB9LhzDkFgKUTwA/39qUzAQxYAAtgASyABbAABiyABbAAFsDSHvDSp+upZ/NDb+qp5dWbBzBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAbgxXe9qaf5t6m6d8zmAQwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDrgF458lVw5SYXCtx4pqnxBRk8/MJGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwZcA3DzKbMSp6Pdqb0Sb9nmPydgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHANwO0uEVhiaq8EcIm3AuB/Aj/6fL1yMHh8OFw9HKZNPxXAHQFePhg8/TJcOx49Pxmtn/5p008ldcDVA0fx2dEwrhtfb7bOxttn47Tpp5L6X2PAtQLnOpyRGsvNb+MX329f/pi86k/Spp9K6tmafQDXCpx7ba7GGa8Rfd2fvDm/2724S5t+Kqlna/YBXCtwnqdyx801OaM2rm8v799f/UybfiqpZ2v2AVwrcJ6Zcx3OfTdX5ozd6H68+ZU2/VRSz9ZVwEYwYPdgwJ6iAfs7GLBPsgD7LPo/nC6c5czEfDBgwIABAwYMGDBgwIABAxbAgAEDBgwYMGDAMwTc7uRau0sZtvsbAQYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIAB1wDc7hKBJf4tV4ljllhyETBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMuAbgEl+rcswq16oEDBgwYMcEDBgwYMCAAQOGARgwYMcEDBgwYMCApcoABiyABbAAFsACWAADFsACWAALYJk2sHQygAFLzfkNcM7F3sSvIiYAAAAASUVORK5CYII=" alt="sigil of The Wheel of Time" loading="lazy">
+        <div class="pcap"><div class="pn">The Wheel of Time</div><div class="pe">the loom of the Ages</div>
+        <div class="pnat"><span class="dot" style="background:#e6a849;box-shadow:0 0 7px #e6a849"></span><span style="color:#e6a849">spiritual</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-one-power.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC0UlEQVR42u3dz0pVQRwHcFdCEPgGLVq1Czch0qJVq+gB2gjhtrUQ4QPYphfIbU/QokVv0K7QMlGJhILUq7dr4sqv+AID3mma0we+DMPvXM7R+Xj+eA9nzszsjZsy4MwYAsAyCOBbbz/IYAIYsAAWwAJYAAtgAQxYAAtgASyApR3w7Y+HU8/c+lphXiweNEz5z1ljlAADBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgHsAXnq3VpjygStfZ/lzV23XWeN3BwwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED7gG4fDhq3IZrOzNgjdua5VsHDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQPuAbjtQ101hrjt1ssDGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwY8LOAaUxle80GxbOs6D5/VmMoQ8BSA73w6nN84urc5WtgcpU0/FcADAb67cXT/8+jh1vGjr8ePty/b9FNJHXD3wFF88GUU1yc7J0/3xst747Tpp5L6lTHgXoFzHM6eGsul3fGzb79Xvk+e70/Spp9K6lmazwDuFTjn2hyNs79GdHV/8vLH6aufp2nTTyX1LM1nAPcKnOupnHFzTM5eG9fXv/68OThLm34qqWdpPgO4S+CsNtfMOQ7nvJsjc/bd6L4/OU+bfiqpZ+kCYHswYOdgwK6iAfs/GLBvsgD7LvqvTWXYduDavsCrxvSIgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDXmMqwxmuk2q7TXJWAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4P8VuJfXXdUY4rav0AIMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuO3DZzVu2LX9k/V0IWDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgx4WMDy7wcwYAEsgAWwABbAAhiwABbAAlgAy7SBZZABDFh6zgUl339EwHerZwAAAABJRU5ErkJggg==" alt="sigil of The One Power" loading="lazy">
+        <div class="pcap"><div class="pn">The One Power</div><div class="pe">the True Source that turns the Wheel</div>
+        <div class="pnat"><span class="dot" style="background:#3fd0e0;box-shadow:0 0 7px #3fd0e0"></span><span style="color:#3fd0e0">electrical</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-aes-sedai.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC1UlEQVR42u3dvWoUURgG4FSCIHgHFlbpJI0EsbCyCl6ATSDYWgsiXkBscgOm9QosLLwDOyW/okEMKJhkk81GsfIVW4sD5nNyhgdeDodvhmXnPPO3e5jduUuXr8iIM2cIAMsogK+9fCOjCWDAAlgAC2ABLIAFMGABLIAFsACW4YCvrq825vrbw3PPsLNvFVvUPp6AAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMA9ALcPx5NbB41pH4721xzf+wQMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuGLKrGJyrX2Ih50AbQ9gwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwBVDXDFht/xqtTEVk4AVuxdgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwO0PS1XsCv84sfjXegVw+7Z3/HThxQGef3e4sHF0c3OyuDlJm34qgEcCfGPj6PbW5O7O8dLu8b33v9v0U0kdcPfAUbyzPYnr/Q8nK3vTB3vTtOmnkvofY8C9Auc8nCM1lssfpw8/nT76PHu8P0ubfiqpZ2nWAdwrcK61ORvneI3o0/3Zsy9na1/P0qafSupZmnUA9wqc+6lccXNOzlEb1+ffvr84+JE2/VRSz9KsA7hL4CT3zDkP57qbM3OO3ei+PvmZNv1UUs/SRcCOYMCuwYDdRQP2ORiwb7IA+y76vwFXpOJBsQqMigAGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcAPOwjZRV/d9X+msM+pgYYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwDcMVPBPby11QV77N9PAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgHsAHnYjK34esf01h925AQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAewCWix/AgAWwABbAAlgAC2DAAlgAC2ABLOcNLKMMYMDSc34BxF01KtKgzsgAAAAASUVORK5CYII=" alt="sigil of The Aes Sedai" loading="lazy">
+        <div class="pcap"><div class="pn">The Aes Sedai</div><div class="pe">the White Tower and its seven colors</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-aiel.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC30lEQVR42u3dvWoUURgG4FSCIHgHFlZ2wUaCWFilEi8gTUBsrQURLyA23oC2XkEKC+/ATkn8Q4MYUDDJJutGsfIVa+GD8TA5kwdeDodvhmHOPMzM7h5mdunM2XMy4Sw5BIBlEsAXNl/IZAIYsAAWwAJYAAtgAQxYAAtgASyAZTzg8082irn4cr+Y+vzX9LZZP56AAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMA9ANd3ff3ZRjH1Qda3ef/qXjHj7mf9eAIGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcA3GK6sMXhmN5+AgYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABTwu4/qhWfZv1ScAWGXfsgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAPQDXd73Fi/8GPnyWLQx5+KzFSw/rAfxP4Euv9i9vHVzZnq1sz9KmnwrgiQAvbx1cez1bfXt4493hzfd/2vRTSR1w98BRvP5mFte1D0e3dua3d+Zp008l9b/GgHsFznU4Z2os1z/O73z6fvfz4t7uIm36qaSepVkHcK/AudfmapzzNaIPdhcPvxw/+nqcNv1UUs/SrAO4V+B8nsodN9fknLVxffztx9O9n2nTTyX1LM06gLsEzsr5zJzrcO67uTLn3I3u86NfadNPJfUsXQHsDAbsHgzYp2jAvgcD9ksWYL9FDwRuMbnWYpstHv8ad+yAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMA9ALd4AKuOMe5rB1tMF56KpwsBAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwKcIuD69VR9kHWPc6cL6ftbH3vF8MGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8CDggf9xdAL/mmrcsQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcALCc/gAELYAEsgAWwABbAgAWwABbAAlj+N7BMMoABS8/5DcCsdneRUyC9AAAAAElFTkSuQmCC" alt="sigil of The Aiel" loading="lazy">
+        <div class="pcap"><div class="pn">The Aiel</div><div class="pe">the People of the Dragon, who do not touch a sword</div>
+        <div class="pnat"><span class="dot" style="background:#5fae7a;box-shadow:0 0 7px #5fae7a"></span><span style="color:#5fae7a">natural</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-wise-ones.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC7klEQVR42u3dvWoUURgG4FSCIHgHFlZ2kkaCWFhZiRdgExBba0HEC9DGG9DWK7Cw8A7slMQ/NIgBBZNssm4UK197hW8xJzNneODlcPgmmZ05D/Oze9idlRMnT8mEs2IIAMskgM88fSGTCWDAAlgAC2ABLIAFMGABLIAFsACW4YDrc1VnX+4WU1/n+rP7A2bYfQcMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA+4BuL7p9dSHuMXADbud9QAGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAfcAXN/J04+ruXtxp5j6cNRfvb7O+nbWX70+noABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwD0At8Bo8eWz+nYO++Wz+nYCBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAH3ANxiOOo7WV/nv8b9f/69xXZ2PB88HuBzr3ZXN/YubM7WNmdp008F8ESAz2/sXXo9u/J2/+q7/Wvv/7Tpp5I64O6Bo3j5zSyu1z8c3Nia39yap00/ldSXNQY8LuCch3OkxnL94/zWp++3Py/ubC/Spp9K6lm61Lka8LiAc63N2TjHa0TvbS8efDl8+PUwbfqppJ6lq8scxIDHBZz7qVxxc07OURvXR99+PNn5mTb9VFLP0vwN4C6B844o98w5D+e6mzNzjt3oPj/4lTb9VFLP0jXAjmDArsGA3UUD9j4YsE+yAPss+tgejDX426Qjn6w8tlmvPp58BhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/JfUf6SvxcC1eOBUiy+K1fe9Pp6AAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMA9AA87tdfisVz1dQ47BQkYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBtwDcIsf6WsxYTfsOlv84CNgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHAPwDL+AAYsgAWwABbAAlgAAxbAAlgAC2A5amCZZAADlp7zG+faB8x6/SdsAAAAAElFTkSuQmCC" alt="sigil of The Wise Ones" loading="lazy">
+        <div class="pcap"><div class="pn">The Wise Ones</div><div class="pe">the dreamwalkers and counselors of the Aiel</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/taveren.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC00lEQVR42u3dz0pUURwHcFeBEPQGLly5kzYh0qKVK/EB3AjhtrUQ0gPYpheobU/gwoVv4K7QsiiRhITU0Wk0XPWNtgUHmsOdc/vAl8Phdy/DnfPx/pk5471Td6bvSo8zZQgASy+AZ7b3pDcBDFgAC2ABLIAFsAAGLIAFsAAWwNIdcI1Zrdk354Upf821na3CdLud5QEMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABA24B+N6rrcJsLp6NPTXYyl+zxjsqH0/AgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOAWgMsHrsZwlKd8aq/b7Wx4PhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDPgPKZ9c63YartvUGCXAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMOD/FbjGjf/+Nof4LxN2Nf6hDfAYgOfent/fv3hwMFg4GKRNPxXAPQGe3794+G6wdHi5/OFy5eOvNv1UUgfcPHAUH70fxHX109Xjo+H60TBt+qmk/tsYcKvAOQ5nT43l2ufhk+PvG19GT09GadNPJfUszTqAWwXOuTZH4+yvEX12Mnr+9frF6XXa9FNJPUuzDuBWgXM9lTNujsnZa+P68tvN67MfadNPJfUszTqAmwTOJ6JcM+c4nPNujszZd6O7e3WbNv1UUs/SBcD2YMDOwYBdRQP2ORiwb7IA+y56Ah+M1e2fQivbCRgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3AJw+S0Ca7zJGo/lKn/NSj8OLAxgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHALwN0+xKrGY7lqYNQYJcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgw4H4Bt3KLwAl8vhNgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGHCzwDL5AQxYAAtgASyABbAABiyABbAAFsAybmDpZQADlpbzE4+BE/qxusO7AAAAAElFTkSuQmCC" alt="sigil of Ta&#x27;veren" loading="lazy">
+        <div class="pcap"><div class="pn">Ta&#x27;veren</div><div class="pe">the points where the Pattern bends to a life</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a><a class="persona" href="agents/the-horn-of-valere.agent">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAC30lEQVR42u3du2pUURQG4FSCIPgGFlZ2YiNBLKysxAewCYittSDiA8TGF9DWJ7Cw8A3slMQbGsSAgkkmGSeKlb/YCi7QZdwnH/xsNusM5/ady8xsZs7SkaPHZMJZsgsAyySATzx8IpMJYMACWAALYAEsgAUwYAEsgAWwAJaDA155tFpMfVTr1rmtYo7fXy2mvp71edbXs77t9fUEDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMeAbi+6vUd18HWkY4tqu9PwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDgEYBPPt0upuNQqC+9PrRXn2cHW33pgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA0wI+2AG7jsOrY4sAAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwICnBdzxV4b1jfzDw+uX9Y6l+6/Kfwp86tn2mbWds+uz5fVZ2vRTATwR4NNrO+efzy6+3L30avfy6x9t+qmkDnh44CheeDGL65U3e1c35tc25mnTTyX1n8aARwXOdThnaixX3s6vv/t84/3i5uYibfqppJ6peQ3gUYFzr83VOOdrRG9vLu582L/7cT9t+qmknql5DeBRgfN+KnfcXJNz1sb13qcvD7a+pk0/ldQzNa8BPCRwkvfMuQ7nvpsrc87d6D7e+5Y2/VRSz9RlwM5gwO7BgL2LBuxzMGDfZAH2XfTQD8bqWHp9np58BhgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG/LscLEbHT8o6lt5x0AAGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAY8A3LE7Oh5i1fHTt47hwnoAAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIBHAO4YBKwP7XU8lqs+z44hyEPx60LAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY8CEClv8/gAELYAEsgAWwABbAgAWwABbAAlj+NrBMMoABy8j5Dif9s/+yJUmgAAAAAElFTkSuQmCC" alt="sigil of The Horn of Valere" loading="lazy">
+        <div class="pcap"><div class="pn">The Horn of Valere</div><div class="pe">the horn that calls the dead heroes back</div>
+        <div class="pnat"><span class="dot" style="background:#9a7cff;box-shadow:0 0 7px #9a7cff"></span><span style="color:#9a7cff">ethereal</span><span class="pa">· .agent · .carbon.tiff →</span></div></div></a></div></section>
 
-  <!-- ============ FOOTER ============ -->
+  <section class="sec"><h2 style="margin-top:14px">The Bibliography</h2><p class="ss">the fourteen volumes in order, the prequel, and the companions</p></section>
+  <section class="sec"><h2>The Main Sequence</h2><p class="ss">the fourteen volumes of the turning Wheel</p><ol class="books"><li><span class="t">1 · The Eye of the World</span><span class="y">1990</span><span class="nt">three young men flee the Two Rivers as the Shadow hunts them — the journey to the Eye</span></li>
+<li><span class="t">2 · The Great Hunt</span><span class="y">1990</span><span class="nt">the Horn of Valere stolen; the hunt across the Portal Stones; Rand proclaimed the Dragon</span></li>
+<li><span class="t">3 · The Dragon Reborn</span><span class="y">1991</span><span class="nt">Rand seizes the crystal sword Callandor in the Stone of Tear, fulfilling prophecy</span></li>
+<li><span class="t">4 · The Shadow Rising</span><span class="y">1992</span><span class="nt">Rhuidean and the hidden history of the Aiel; the Two Rivers stands against the Shadow</span></li>
+<li><span class="t">5 · The Fires of Heaven</span><span class="y">1993</span><span class="nt">across the Waste; Rand against Couladin; Moiraine into the doorway</span></li>
+<li><span class="t">6 · Lord of Chaos</span><span class="y">1994</span><span class="nt">the cage at Dumai&#x27;s Wells — “Let the Lord of Chaos rule.”</span></li>
+<li><span class="t">7 · A Crown of Swords</span><span class="y">1996</span><span class="nt">the Bowl of the Winds, and the cleansing of the taint draws near</span></li>
+<li><span class="t">8 · The Path of Daggers</span><span class="y">1998</span><span class="nt">the Bowl breaks the unnatural winter as the Seanchan press inward</span></li>
+<li><span class="t">9 · Winter&#x27;s Heart</span><span class="y">2000</span><span class="nt">Rand cleanses saidin of the Dark One&#x27;s taint at Shadar Logoth</span></li>
+<li><span class="t">10 · Crossroads of Twilight</span><span class="y">2003</span><span class="nt">the world holds its breath in the wake of the cleansing</span></li>
+<li><span class="t">11 · Knife of Dreams</span><span class="y">2005</span><span class="nt">the last volume Jordan wrote; the pace quickens; Mat weds Tuon</span></li>
+<li><span class="t">12 · The Gathering Storm</span><span class="y">2009</span><span class="nt">Sanderson takes up the notes; Rand at his darkest on Dragonmount; Egwene reforges the Tower</span></li>
+<li><span class="t">13 · Towers of Midnight</span><span class="y">2010</span><span class="nt">Mat into the Tower of Ghenjei; Perrin&#x27;s reckoning; the threads draw together</span></li>
+<li><span class="t">14 · A Memory of Light</span><span class="y">2013</span><span class="nt">Tarmon Gai&#x27;don — the Last Battle at Shayol Ghul</span></li></ol></section>
+<section class="sec"><h2>The Prequel</h2><p class="ss">before the three young men</p><ol class="books"><li><span class="t">New Spring</span><span class="y">2004</span><span class="nt">young Moiraine and Siuan as Accepted as the Aiel War ends and the Dragon is reborn; Moiraine meets Lan (novel expanded from the 1998 novella)</span></li></ol></section>
+<section class="sec"><h2>The Companions</h2><p class="ss">the world beyond the story</p><ol class="books"><li><span class="t">The World of Robert Jordan&#x27;s The Wheel of Time</span><span class="y">1997</span><span class="nt">“the Big White Book” — the guide to the world, with Teresa Patterson</span></li>
+<li><span class="t">The Wheel of Time Companion</span><span class="y">2015</span><span class="nt">the full encyclopedia of names, places, and the Power</span></li>
+<li><span class="t">The Wheel of Time (graphic novels &amp; TV)</span><span class="y">2005 →</span><span class="nt">the comic adaptations, and the Amazon Prime series (2021 →)</span></li></ol></section>
+
+  <div class="tinfoil">
+    <b>☸ a fan tribute.</b> The Wheel of Time is the creation of <b>Robert Jordan</b> (James Oliver Rigney Jr.); after his death in 2007, the final three volumes were completed by <b>Brandon Sanderson</b> from Jordan's notes. © the author's estate and Tor Books. This catalogue is an <b>unofficial homage</b> — original commentary and ACI badge-work over a bibliography, with no copyrighted text reproduced. Plot beats are given to the best of record. The wider Aes Sedai color-scale also anchors the <a href="https://davidwise01.github.io/purple-team/">Purple Team</a>.
+  </div>
+
   <footer>
-    <div class="attr">ROOT0-ATTRIBUTION-v1.0 · The Wheel of Time · David Lee Wise / ROOT0 / TriPod LLC · MIT</div>
-    <div><a href="https://github.com/DavidWise01/wheel-of-time">github.com/DavidWise01/wheel-of-time</a></div>
-    <div>see also: the <a href="https://github.com/DavidWise01/bridge-burners">Bridge Burners</a> and the <a href="https://github.com/DavidWise01/black-company">Black Company</a> muster rolls</div>
-    <div class="inspiration">Characters by Robert Jordan &amp; Brandon Sanderson, referenced as inspiration only.</div>
+    THE WHEEL OF TIME · WOT · catalogued into UD0 · ROOT0-ATTRIBUTION-v1.0 · governor David Lee Wise · instance AVAN (locked) · CC-BY-ND-4.0 (original material) · fan tribute<br>
+    <a href="https://davidwise01.github.io/ud0/">← the biosphere</a> · the .dlw badge: <a href="wheel-of-time.dlw/manifest.dlw.json">manifest</a>
   </footer>
-
-</div>
-
-<script>
-  // ---- Roster embedded inline (source of truth, copied verbatim) ----
-  const ROSTER = {
-    "company": "The Wheel of Time",
-    "subtitle": "this Turn of the Wheel",
-    "author": "Robert Jordan & Brandon Sanderson",
-    "note": "The current Turn of the Wheel — the living Age's company — sorted into specialty classes, in the manner of the muster roll. Channelers filed by Ajah (the colors are canon). The Dragon, the Wolf, and the Gambler are three ta'veren but one weave: the One, a third each. Moiraine, Blue, leads the battalion. roster.json is the source of truth; characters by Robert Jordan & Brandon Sanderson, inspiration only.",
-    "classes": [
-      { "id": "blue",     "label": "Blue Ajah · Command", "spec": "causes & the cause — leader of the battalion", "color": "#2f5fb0", "ink": "#fff" },
-      { "id": "yellow",   "label": "Yellow Ajah",         "spec": "Healing",                 "color": "#d9b310", "ink": "#1a1a1a" },
-      { "id": "green",    "label": "Green Ajah",          "spec": "the Battle Ajah",         "color": "#2e7d4f", "ink": "#fff" },
-      { "id": "brown",    "label": "Brown Ajah",          "spec": "knowledge",               "color": "#6a4a2a", "ink": "#fff" },
-      { "id": "red",      "label": "Red Ajah",            "spec": "the hunt",                "color": "#9c1f2e", "ink": "#fff" },
-      { "id": "amyrlin",  "label": "The Amyrlin Seat",    "spec": "all Ajahs and none · the Flame of Tar Valon", "color": "#efe7c8", "ink": "#1a1a1a" },
-      { "id": "forsaken", "label": "The Forsaken",        "spec": "all + shadow · the Chosen", "color": "#1c1430", "ink": "#c2a8e8" },
-      { "id": "warders",  "label": "Warders",             "spec": "the blade",               "color": "#3a4250", "ink": "#fff" },
-      { "id": "aiel",     "label": "The Aiel",            "spec": "the spear · ji'e'toh",    "color": "#b5683a", "ink": "#1a1a1a" },
-      { "id": "loyalty",  "label": "Undying Loyalty",     "spec": "the Two Rivers & kin",    "color": "#6a5230", "ink": "#fff" },
-      { "id": "the-one",  "label": "The One",             "spec": "three ta'veren · one third each · one total", "color": "#b8862b", "ink": "#1a1a1a" }
-    ],
-    "members": [
-      { "name": "Moiraine Damodred", "class": "blue", "lead": true, "specialty": "Blue Ajah. Leader of the battalion. She found the Dragon and bent her whole life to the cause — spent herself into the redstone doorway, and came back to finish it." },
-      { "name": "Siuan Sanche",      "class": "blue", "specialty": "Blue. The Amyrlin who staked the White Tower on Moiraine's secret hunt. Fisherman's daughter, iron will, no patience for fools." },
-      { "name": "Nynaeve al'Meara",  "class": "yellow", "specialty": "Yellow. Wisdom of Emond's Field; the angriest, strongest Healer alive. Healed gentling and madness the Tower swore could not be Healed." },
-      { "name": "Cadsuane Melaidhrin","class": "green", "specialty": "Green, the Battle Ajah. The most formidable living Aes Sedai — a legend before the rest were born. Teaches kings and Dragons manners." },
-      { "name": "Verin Mathwin",     "class": "brown", "specialty": "Brown. Scholar of the deep stacks — who spent seventy years inside the Black Ajah to betray it with a single book. Knowledge is the longest blade." },
-      { "name": "Pevara Tazanovni",  "class": "red", "specialty": "Red, the Ajah that hunts men who can channel — and the first Red to bond an Asha'man. The hunt, turned to alliance." },
-      { "name": "Egwene al'Vere",    "class": "amyrlin", "specialty": "Innkeeper's daughter of Emond's Field who became the Amyrlin Seat — all Ajahs and none. The Flame of Tar Valon; she reunited a broken Tower and did not bend." },
-      { "name": "Lanfear",           "class": "forsaken", "specialty": "Mierin. Most powerful of the Chosen; love soured into obsession; she who helped bore the Bore and let the Dark One's breath in." },
-      { "name": "Moridin",           "class": "forsaken", "specialty": "Ishamael reborn. Nae'blis — nearest the Dark One's hand. The Betrayer of Hope who only wants the Wheel to stop turning." },
-      { "name": "Graendal",          "class": "forsaken", "specialty": "Compulsion incarnate. Ruled through ruined minds and beautiful slaves; never where the knife is pointed." },
-      { "name": "Demandred",         "class": "forsaken", "specialty": "The great general the Light never saw coming — brilliance soured to spite, searching a whole war for the Dragon to challenge." },
-      { "name": "al'Lan Mandragoran","class": "warders", "specialty": "Dai Shan. Uncrowned King of Malkier; Moiraine's Warder; the blade that does not break. Death is lighter than a feather." },
-      { "name": "Aviendha",          "class": "aiel", "specialty": "Maiden of the Spear turned Wise One. Toh and honor and a future glimpsed through the glass columns; the desert's keenest edge." },
-      { "name": "The Wise Ones",     "class": "aiel", "specialty": "Walkers in the dream, keepers of ji'e'toh; the spine of the Aiel and the conscience of their chiefs." },
-      { "name": "Tam al'Thor",       "class": "loyalty", "specialty": "Rand's father. Second Captain, blademaster's heron-marked blade, and a farmer's steady love — the man who carried a baby off Dragonmount." },
-      { "name": "Loial",             "class": "loyalty", "specialty": "Ogier of Stedding Shangtai; ninety years young and 'hasty.' Would rather read than fight — and fights anyway. Also: he writes the book." },
-      { "name": "Rand al'Thor",      "class": "the-one", "fraction": "1/3", "specialty": "the Dragon Reborn. The Light's champion; he who must stand at Shayol Ghul. Fire, the Power, and the weight of every Age on one sheepherder's shoulders." },
-      { "name": "Perrin Aybara",     "class": "the-one", "fraction": "1/3", "specialty": "Wolfbrother; the hammer that chooses to be a hammer and not an axe; walker in the wolf-dream; Lord of the Two Rivers who never wanted a title." },
-      { "name": "Matrim Cauthon",    "class": "the-one", "fraction": "1/3", "specialty": "the Gambler; luckiest man alive; sounder of the Horn of Valere; carrying the memories of a thousand dead generals in one reluctant head." }
-    ]
-  };
-
-  // ---- HTML escape ----
-  function esc(s) {
-    return String(s == null ? "" : s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
-  }
-
-  // Ajah legend mapping: id -> short role label
-  const AJAH_ROLES = {
-    blue: "Command / Causes",
-    yellow: "Healing",
-    green: "Battle",
-    brown: "Knowledge",
-    red: "the Hunt"
-  };
-  const AJAH_ORDER = ["blue", "yellow", "green", "brown", "red"];
-
-  // ---- Masthead ----
-  document.getElementById("m-title").textContent = ROSTER.company;
-  document.getElementById("m-subtitle").textContent = ROSTER.subtitle;
-  document.getElementById("m-note").textContent = ROSTER.note;
-  document.getElementById("m-byline").textContent = "— " + ROSTER.author;
-
-  // ---- Ajah legend ----
-  const classById = {};
-  ROSTER.classes.forEach(c => { classById[c.id] = c; });
-
-  const legendEl = document.getElementById("legend");
-  AJAH_ORDER.forEach(id => {
-    const c = classById[id];
-    if (!c) return;
-    const name = c.label.split("·")[0].trim(); // e.g. "Blue Ajah"
-    const div = document.createElement("div");
-    div.className = "swatch";
-    div.style.background = c.color;
-    div.style.color = c.ink;
-    div.innerHTML =
-      '<div class="swatch-name">' + esc(name) + '</div>' +
-      '<div class="swatch-role">' + esc(AJAH_ROLES[id] || c.spec) + '</div>';
-    legendEl.appendChild(div);
-  });
-
-  // ---- Build the roll (all classes except the-one) ----
-  const rollEl = document.getElementById("roll");
-
-  function memberHTML(m) {
-    let leadTag = m.lead ? ' <span class="lead-tag">⮞ leads the battalion</span>' : "";
-    return '' +
-      '<div class="member">' +
-        '<div class="member-name">' + esc(m.name) + leadTag + '</div>' +
-        '<div class="member-spec">' + esc(m.specialty) + '</div>' +
-      '</div>';
-  }
-
-  ROSTER.classes.forEach(c => {
-    if (c.id === "the-one") return; // handled separately, monumental
-
-    const members = ROSTER.members.filter(m => m.class === c.id);
-    if (!members.length) return;
-
-    const section = document.createElement("section");
-    section.className = "class-section " + c.id;
-    section.style.borderLeftColor = c.color;
-
-    const head = document.createElement("div");
-    head.className = "class-head";
-
-    const tag = document.createElement("span");
-    tag.className = "class-tag";
-    tag.style.background = c.color;
-    tag.style.color = c.ink;
-    tag.textContent = c.id.toUpperCase();
-
-    const label = document.createElement("h3");
-    label.className = "class-label";
-    label.textContent = c.label;
-
-    const spec = document.createElement("span");
-    spec.className = "class-spec";
-    spec.textContent = c.spec;
-
-    head.appendChild(tag);
-    head.appendChild(label);
-    head.appendChild(spec);
-    section.appendChild(head);
-
-    section.insertAdjacentHTML("beforeend", members.map(memberHTML).join(""));
-    rollEl.appendChild(section);
-  });
-
-  // ---- THE ONE — monumental, three thirds of one weave ----
-  const oneClass = classById["the-one"];
-  const oneMembers = ROSTER.members.filter(m => m.class === "the-one");
-  const oneEl = document.getElementById("the-one");
-
-  const ringSVG =
-    '<svg class="ring-svg" viewBox="0 0 200 200" aria-hidden="true">' +
-      '<defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">' +
-        '<stop offset="0%" stop-color="#e6c168"/>' +
-        '<stop offset="100%" stop-color="#8a611c"/>' +
-      '</linearGradient></defs>' +
-      '<circle cx="100" cy="100" r="88" fill="none" stroke="url(#ringGrad)" stroke-width="3"/>' +
-      // three arc-segment dividers (three thirds of one circle)
-      '<g stroke="#b8862b" stroke-width="2" opacity="0.7">' +
-        '<line x1="100" y1="100" x2="100" y2="12"/>' +
-        '<line x1="100" y1="100" x2="176.2" y2="144"/>' +
-        '<line x1="100" y1="100" x2="23.8" y2="144"/>' +
-      '</g>' +
-      '<circle cx="100" cy="100" r="10" fill="#b8862b"/>' +
-    '</svg>';
-
-  const thirdsHTML = oneMembers.map(m =>
-    '<div class="third">' +
-      (m.fraction ? '<div class="fraction-chip">' + esc(m.fraction) + '</div>' : '') +
-      '<div class="third-name">' + esc(m.name) + '</div>' +
-      '<div class="third-spec">' + esc(m.specialty) + '</div>' +
-    '</div>'
-  ).join("");
-
-  oneEl.innerHTML =
-    '<h2 class="the-one-title">' + esc(oneClass.label) + '</h2>' +
-    '<p class="the-one-spec">' + esc(oneClass.spec) + '</p>' +
-    '<div class="ring-wrap">' +
-      ringSVG +
-      '<div class="thirds">' + thirdsHTML + '</div>' +
-    '</div>' +
-    '<p class="one-cord">three threads, one cord.</p>';
-</script>
-</body>
-</html>
+</div></body></html>

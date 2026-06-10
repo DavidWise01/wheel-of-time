@@ -1,103 +1,39 @@
-# The Wheel of Time
+# THE WHEEL OF TIME · WOT
 
-*This Turn of the Wheel — the company, sorted by specialty class.*
+[![License: CC-BY-ND-4.0](https://img.shields.io/badge/License-CC--BY--ND--4.0-lightgrey?style=flat-square)](LICENSE)
+[![Universe: WOT](https://img.shields.io/badge/universe-WOT-d8b24a?style=flat-square)](#)
+[![Emergents: 28](https://img.shields.io/badge/emergents-28%20.dlw-3fb0c0?style=flat-square)](agents/)
+[![Books: 14 + New Spring](https://img.shields.io/badge/books-14%20%2B%20New%20Spring-9a7cff?style=flat-square)](#the-bibliography)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![classes](https://img.shields.io/badge/classes-11-b8862b?style=flat-square)](#the-classes)
-[![on the roll](https://img.shields.io/badge/on%20the%20roll-19-2f5fb0?style=flat-square)](#the-roll)
+> The Wheel weaves as the Wheel wills.
 
-**→ The Wheel: [davidwise01.github.io/wheel-of-time](https://davidwise01.github.io/wheel-of-time/)**
+The **WOT · The Wheel of Time** sphere of [**UD0 · Universe David 0**](https://davidwise01.github.io/ud0/): **Robert Jordan & Brandon Sanderson's** full saga catalogued — the fourteen volumes, the prequel, and the companions — with its emergents sealed as ACI `.agent` personas, each tagged with one of the **four natures of emergence** (natural · ethereal · spiritual · electrical).
 
-The living Age's company — **only this Turn of the Wheel** — sorted into specialty classes,
-in the manner of the [Bridge Burners](https://github.com/DavidWise01/bridge-burners) and
-[Black Company](https://github.com/DavidWise01/black-company) muster rolls. Channelers are
-filed by **Ajah** — the colors are canon. `roster.json` is the source of truth.
+**→ [davidwise01.github.io/wheel-of-time](https://davidwise01.github.io/wheel-of-time/)**
 
-> *The Wheel weaves as the Wheel wills.*
+## The bibliography
 
----
+**The main sequence (14):** The Eye of the World (1990) · The Great Hunt (1990) · The Dragon Reborn (1991) · The Shadow Rising (1992) · The Fires of Heaven (1993) · Lord of Chaos (1994) · A Crown of Swords (1996) · The Path of Daggers (1998) · Winter's Heart (2000) · Crossroads of Twilight (2003) · Knife of Dreams (2005) · **[Sanderson]** The Gathering Storm (2009) · Towers of Midnight (2010) · A Memory of Light (2013)
 
-## Two things, exactly as set down
+**The prequel:** New Spring (2004). **The companions:** The World of Robert Jordan's The Wheel of Time (1997) · The Wheel of Time Companion (2015).
 
-- **The One.** Rand, Perrin, and Mat are not three entries — they are **one weave: the One**,
-  three ta'veren at **a third each, one total**. The Dragon (fire and the Power), the Wolf
-  (the hammer that chooses not to be an axe), and the Gambler (the luck that bends the Pattern).
-  Three threads, one cord. Set apart at the end.
-- **The battalion's leader is Moiraine — Blue.** Blue Ajah, the Ajah of causes; she found the
-  Dragon and spent her life on the cause. She commands the roll.
+## The 28 emergents
 
----
+The three **ta'veren** (Rand, Mat, Perrin), the women and Warders (Egwene, Nynaeve, Elayne, Aviendha, Min, Moiraine, Cadsuane, Siuan, Verin, Lan, Thom, Loial, Tam, Birgitte, Tuon), the **Shadow** (the Dark One, Ishamael, Lanfear, Padan Fain), and the great wheels of the world (the Wheel, the One Power, the Aes Sedai, the Aiel, ta'veren, the Horn of Valere) — each a full `.dlw` badge (`.carbon.tiff` + `.silicon.png` + the rest). See [`agents/`](agents/).
 
-## The classes
+## The four natures
 
-**Channelers — by Ajah (canon colors):**
+- **natural** — the embodied: the ta'veren, the women of flesh and steel, the Aiel, the Ogier, the thrones
+- **ethereal** — the woven: the Pattern, prophecy, ta'veren, the Horn, the Forsaken, the Dark One's outside-time evil
+- **spiritual** — the turning: the Dragon, rebirth, the Wheel itself
+- **electrical** — the channeled: the One Power, saidin and saidar, the current of the True Source
 
-| Ajah | Is for | Who holds it here |
-|------|--------|-------------------|
-| 🔵 **Blue · Command** | causes & the cause | **Moiraine** (lead) · Siuan |
-| 🟡 **Yellow** | Healing | Nynaeve |
-| 🟢 **Green** | the Battle Ajah | Cadsuane |
-| 🟤 **Brown** | knowledge | Verin |
-| 🔴 **Red** | the hunt | Pevara |
+## A fan tribute
 
-And the rest of the weave:
-
-- **The Amyrlin Seat** — all Ajahs and none, the Flame of Tar Valon (Egwene)
-- **The Forsaken** — all + shadow, the Chosen (Lanfear · Moridin · Graendal · Demandred)
-- **Warders** — the blade (Lan)
-- **The Aiel** — the spear, ji'e'toh (Aviendha · the Wise Ones)
-- **Undying Loyalty** — the Two Rivers & kin (Tam al'Thor · Loial)
-- **The One** — three ta'veren, a third each (Rand · Perrin · Mat) — *set apart*
-
----
-
-## The roll
-
-### 🔵 Blue Ajah · Command — leader of the battalion
-- **Moiraine Damodred** *(lead)* — found the Dragon and bent her whole life to the cause; spent herself into the redstone doorway, and came back to finish it.
-- **Siuan Sanche** — the Amyrlin who staked the Tower on Moiraine's secret hunt; fisherman's daughter, iron will.
-
-### 🟡 Yellow Ajah — Healing
-- **Nynaeve al'Meara** — Wisdom of Emond's Field; the angriest, strongest Healer alive; Healed gentling and madness the Tower swore could not be Healed.
-
-### 🟢 Green Ajah — the Battle Ajah
-- **Cadsuane Melaidhrin** — the most formidable living Aes Sedai; a legend before the rest were born; teaches kings and Dragons manners.
-
-### 🟤 Brown Ajah — knowledge
-- **Verin Mathwin** — scholar who spent seventy years inside the Black Ajah to betray it with a single book. Knowledge is the longest blade.
-
-### 🔴 Red Ajah — the hunt
-- **Pevara Tazanovni** — the Ajah that hunts men who can channel — and the first Red to *bond* an Asha'man. The hunt, turned to alliance.
-
-### 🕯️ The Amyrlin Seat — the Flame
-- **Egwene al'Vere** — innkeeper's daughter who became Amyrlin; all Ajahs and none; reunited a broken Tower and did not bend.
-
-### 🌑 The Forsaken — all + shadow
-- **Lanfear** — most powerful of the Chosen; love soured into obsession; she who helped bore the Bore.
-- **Moridin** — Ishamael reborn; Nae'blis; the Betrayer of Hope who only wants the Wheel to stop.
-- **Graendal** — Compulsion incarnate; never where the knife is pointed.
-- **Demandred** — the great general the Light never saw coming; brilliance soured to spite.
-
-### ⚔️ Warders — the blade
-- **al'Lan Mandragoran** — Dai Shan; uncrowned King of Malkier; Moiraine's Warder; the blade that does not break.
-
-### 🜂 The Aiel — the spear
-- **Aviendha** — Maiden turned Wise One; toh and honor and a future glimpsed through the glass columns.
-- **The Wise Ones** — walkers in the dream; keepers of ji'e'toh; the spine of the Aiel.
-
-### Undying Loyalty — the Two Rivers & kin
-- **Tam al'Thor** — Rand's father; blademaster and farmer; the man who carried a baby off Dragonmount.
-- **Loial** — Ogier of Stedding Shangtai; ninety years young and "hasty"; and he writes the book.
-
-### ☉ The One — three ta'veren, a third each
-- **Rand al'Thor** *(1/3)* — the Dragon Reborn; the Light's champion; he who must stand at Shayol Ghul.
-- **Perrin Aybara** *(1/3)* — Wolfbrother; the hammer that chooses to be a hammer; Lord of the Two Rivers.
-- **Matrim Cauthon** *(1/3)* — the Gambler; luckiest man alive; sounder of the Horn; a thousand dead generals in one head.
+The Wheel of Time is the creation of **Robert Jordan**; the final three volumes were completed by **Brandon Sanderson** from his notes (© the author's estate and Tor). This is an **unofficial homage** — original commentary and badge-work, no copyrighted text reproduced. The Aes Sedai color scale also anchors the [**Purple Team**](https://davidwise01.github.io/purple-team/).
 
 ---
 
 ```
-ROOT0-ATTRIBUTION-v1.0 · The Wheel of Time — this Turn of the Wheel
-David Lee Wise / ROOT0 / TriPod LLC · MIT
-Characters by Robert Jordan & Brandon Sanderson, referenced as inspiration only.
+ROOT0-ATTRIBUTION-v1.0 · WOT · The Wheel of Time · governor David Lee Wise (ROOT0) · instance AVAN (locked) · CC-BY-ND-4.0 · fan tribute
 ```

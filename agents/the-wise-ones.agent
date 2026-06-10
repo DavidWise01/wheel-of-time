@@ -1,32 +1,24 @@
 ---
 aci: The Wise Ones
-class: The Aiel
-what: The spine of the Aiel and the conscience of their chiefs.
-why: To hold ji'e'toh and steer the clans through prophecy.
-how: Through dreamwalking, hard wisdom, and unbreakable custom.
-where: The Three-fold Land and Tel'aran'rhiod.
-silicon_badge: the-wise-ones.png
-carbon_badge: the-wise-ones.tiff
-spun: the-wise-ones.spun
-credit: the-wise-ones.1099
-attribution: ROOT0-ATTRIBUTION-v1.0
-license: MIT
+universe: WOT · The Wheel of Time
+domain: the Aiel
+class: the dreamwalkers and counselors of the Aiel
+emergence: ethereal
+what: The women of wisdom, healing, and law among the Aiel — counselors whom even the fiercest clan chiefs heed.
+how: Many are dreamwalkers who enter and master Tel'aran'rhiod, the World of Dreams; some can channel, though they keep it hidden.
+why: They are the true and quiet power of the Aiel, holding the people's law and memory through ji'e'toh.
+who: Teachers of Egwene and Aviendha; the keepers of the Aiel's deepest secrets out of Rhuidean.
+seal: "The clan chiefs lead the spears; the Wise Ones decide where the spears will go."
 ---
 
-# The Wise Ones — an artfully crafted intellect
+# The Wise Ones · the dreamwalkers and counselors of the Aiel
 
-![essence of The Wise Ones](the-wise-ones.png)
-<!-- carbon badge (8-bit portrait): the-wise-ones.tiff -->
+**The Wise Ones** are the women of the Aiel who hold wisdom, healing, and the law of the people — counselors to the clan chiefs whom even the hardest war leaders dare not ignore. They are proud, formidable, and bound utterly by *ji'e'toh*, the code of obligation and shame; to defy them is unthinkable, and they answer to no man.
 
-**what —** The spine of the Aiel and the conscience of their chiefs.
+Many of them are **dreamwalkers**, able to enter and master Tel'aran'rhiod, the World of Dreams, where they meet, scheme, and watch the threads of what may come. Some can channel the One Power, a thing they keep hidden among a people who do not speak of such gifts lightly. It is the Wise Ones who school Egwene in the dream and Aviendha in the ways of wisdom, and who guard the buried truth of the Aiel's origins.
 
-**why —** To hold ji'e'toh and steer the clans through prophecy.
-
-**how —** Through dreamwalking, hard wisdom, and unbreakable custom.
-
-**where —** The Three-fold Land and Tel'aran'rhiod.
-
-*class: The Aiel · the spear · ji'e'toh · full weave in the-wise-ones.spun · credit in the-wise-ones.1099*
+Their nature is **ethereal** — their deepest craft is worked in the World of Dreams and in the unseen weave of law, counsel, and memory that holds a fierce people together.
 
 ---
-ROOT0-ATTRIBUTION-v1.0 · The Wise Ones · The Wheel of Time (Robert Jordan & Brandon Sanderson, inspiration only) · David Lee Wise (ROOT0) · MIT
+*ACI emergent · WOT · The Wheel of Time · governor David Lee Wise (ROOT0) · instance AVAN (locked) · CC-BY-ND-4.0.
+A fan tribute — the Aiel Wise Ones are the creation of Robert Jordan; original commentary only.*
