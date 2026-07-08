@@ -4,6 +4,6 @@ slug  : wheel-of-time
 seal  : cfebb850c1724712e28067f80330b18963559d56fc8b8de22bab9eb80b8c9286
 prev  : a186569692dbf8643d84b8ac2be449cf5ae71de814108547871225c4ae6c31f4
 link  : 93045ff3e0141ffeaadeba4a5ea9f93c0d4d0ddeeb8003d551c397f25f20be5d
-head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+head  : 13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
