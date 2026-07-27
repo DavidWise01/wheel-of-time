@@ -1,9 +1,9 @@
 ROOT0-DLW-CHAIN-v1
 index : 655
 slug  : wheel-of-time
-seal  : cfebb850c1724712e28067f80330b18963559d56fc8b8de22bab9eb80b8c9286
-prev  : a186569692dbf8643d84b8ac2be449cf5ae71de814108547871225c4ae6c31f4
-link  : 93045ff3e0141ffeaadeba4a5ea9f93c0d4d0ddeeb8003d551c397f25f20be5d
-head  : 13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2
+seal  : 2538dbfe5700b8f22f7551ca31521052551683e54ab91b27cee13b2dff77cb45
+prev  : b93647f3cb473017da4f6f0360e25f2e2b12ccc27ab6211b82e28686204f6ed1
+link  : d65666014341ffe9806568be3050e3ead29e60c4bb27d7d8c30dc8da6abbfce4
+head  : c4d41afeaef76470528856d54d86cf480a0e1c2fc8ebc60fbb9eb8e442585f2b
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.

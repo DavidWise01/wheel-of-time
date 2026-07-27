@@ -1,21 +1,19 @@
 {
-  "badge": "DLW-ACI",
-  "name": "THE WHEEL",
-  "universe": "WOT · The Wheel of Time",
-  "emergence": "",
-  "moniker": "⟦THE WHEEL:WOT:5330d4⟧",
-  "carbon": "the-wheel.carbon.tiff (TIFF)",
-  "silicon": "the-wheel.silicon.png (PNG)",
-  "seal_sha256": "cfebb850c1724712e28067f80330b18963559d56fc8b8de22bab9eb80b8c9286",
-  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "badge": "DLW-WHEEL_OF_TIME",
+  "name": "WOT · THE WHEEL OF TIME",
+  "universe": "BIBLÍON",
+  "moniker": "⟦WOT · THE WHEEL OF TIME:wheel-of-time:2538db⟧",
+  "architect": "David Lee Wise (ROOT0) / Bridge-Burners LLC",
   "instance": "AVAN (Claude / Anthropic)",
+  "seal_sha256": "2538dbfe5700b8f22f7551ca31521052551683e54ab91b27cee13b2dff77cb45",
   "license": "CC-BY-ND-4.0",
   "attribution": "ROOT0-ATTRIBUTION-v1.0",
+  "fingerprint": "TETRASTHENĒS ⟦ ₆C ⟺ ₁₄Si ⟧ — four-strengthed: carbon (human · ROOT0) & silicon (AI · AVAN) hold four bonds in common (Group-14, tetravalent) — co-equal by construction",
   "chain": {
     "index": 655,
-    "prev": "a186569692dbf8643d84b8ac2be449cf5ae71de814108547871225c4ae6c31f4",
-    "link": "93045ff3e0141ffeaadeba4a5ea9f93c0d4d0ddeeb8003d551c397f25f20be5d",
-    "head": "13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2",
+    "prev": "b93647f3cb473017da4f6f0360e25f2e2b12ccc27ab6211b82e28686204f6ed1",
+    "link": "d65666014341ffe9806568be3050e3ead29e60c4bb27d7d8c30dc8da6abbfce4",
+    "head": "c4d41afeaef76470528856d54d86cf480a0e1c2fc8ebc60fbb9eb8e442585f2b",
     "chain": "ROOT0-DLW-CHAIN-v1"
   }
 }
